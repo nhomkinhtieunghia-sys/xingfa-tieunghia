@@ -1,0 +1,114 @@
+<!-- Trang Bài viết - Xingfa Tiếu Nghĩa -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bài viết – Xingfa Tiếu Nghĩa">
+    <link rel="icon" href="assets/images/logo.jpg">
+    <title data-i18n="chung.tieuDeBaiViet">Bài viết - Xingfa Tiếu Nghĩa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Be+Vietnam+Pro:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "HomeAndConstructionBusiness",
+          "@id": "https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/#doanh-nghiep",
+          "name": "Xingfa Tiếu Nghĩa",
+          "legalName": "Công ty TNHH Cơ Khí Tiếu Nghĩa",
+          "url": "https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/",
+          "logo": "https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/assets/images/logo.jpg",
+          "image": "https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/assets/images/banner.jpg",
+          "description": "Gia công, lắp đặt cửa sắt, cửa nhôm Xingfa, cửa kính cường lực, nhà lắp ráp panel EPS/PU, mái che, tủ bếp nhôm tại Tây Ninh.",
+          "telephone": "+84976224875",
+          "email": "nhomkinhtieunghia@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "12 Ấp An Thuận",
+            "addressLocality": "Xã An Ninh",
+            "addressRegion": "Tây Ninh",
+            "addressCountry": "VN"
+          },
+          "openingHours": "Mo-Su 08:00-17:00",
+          "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Tây Ninh"
+          },
+          "sameAs": [
+            "https://www.facebook.com/cokhixingfatieunghia/"
+          ],
+          "priceRange": "Liên hệ",
+          "availableLanguage": [
+            "vi",
+            "en",
+            "zh"
+          ],
+          "knowsAbout": [
+            "Cửa sắt – Cổng – Lan can",
+            "Cửa nhôm Xingfa",
+            "Nhà lắp ráp panel",
+            "Tủ bếp & nội thất nhôm",
+            "Mái che hiện đại",
+            "Bảo trì & sửa chữa"
+          ]
+        }
+      ]
+    }
+    </script>
+    <noscript><style>[data-hieu-ung]{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body>
+    <div id="app">
+        <main>
+            <article id="bai-viet">
+                <div class="bv-dau" id="bv-dau">
+                    <div class="container">
+                        <div class="breadcrumb bv-duong-dan">
+                            <a href="index.html" data-i18n="menu.trangChu">Trang chủ</a> ›
+                            <a href="tin-tuc.html" data-i18n="menu.tinTuc">Tin tức</a>
+                        </div>
+                        <h1 id="bv-tieu-de" data-i18n="tinTuc.dangTai">Đang tải bài viết...</h1>
+                        <div class="bv-meta" id="bv-meta"></div>
+                    </div>
+                </div>
+                <div class="container bv-khung">
+                    <p class="bv-chi-tieng-viet" id="bv-chi-vi" hidden></p>
+                    <div class="bv-noi-dung" id="bv-noi-dung"></div>
+                    <div class="bv-chia-se" id="bv-chia-se" hidden>
+                        <span data-i18n="tinTuc.chiaSe">Chia sẻ:</span>
+                        <a id="bv-fb" target="_blank" rel="noopener" class="bv-nut-cs bv-fb">Facebook</a>
+                        <a id="bv-zalo" href="#" class="bv-nut-cs bv-zalo">Zalo</a>
+                        <button type="button" id="bv-sao-chep" class="bv-nut-cs" data-i18n="tinTuc.saoChepLink">Sao chép link</button>
+                    </div>
+                    <aside class="bv-lien-he" id="bv-lien-he" hidden>
+                        <h3 data-i18n="tinTuc.lienHeTieuDe">Cần tư vấn cho công trình của bạn?</h3>
+                        <p data-i18n="tinTuc.lienHeMoTa">Khảo sát, đo đạc tận nơi và báo giá miễn phí tại Tây Ninh.</p>
+                        <div class="dl-hang-nut dl-hang-nut-trai" style="border:0;padding:0">
+                            <a class="btn-chinh" href="dat-lich.html" data-i18n="datLich.tabDat">Đặt lịch khảo sát</a>
+                            <a class="btn-phu" href="tel:0976224875">📞 097-622-4875</a>
+                        </div>
+                    </aside>
+                </div>
+                <section class="container bv-lien-quan" id="bv-lien-quan" hidden>
+                    <h2 data-i18n="tinTuc.lienQuan">Bài viết liên quan</h2>
+                    <div class="bv-luoi" id="bv-ds-lien-quan"></div>
+                </section>
+            </article>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="assets/lang/vi.js"></script>
+    <script src="assets/lang/en.js"></script>
+    <script src="assets/lang/zh.js"></script>
+    <script src="assets/js/ngon-ngu.js"></script>
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/layout.js"></script>
+    <script src="assets/js/hieu-ung.js"></script>
+    <script src="assets/js/bai-viet.js"></script>
+</body>
+</html>

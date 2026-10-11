@@ -1,0 +1,259 @@
+<!-- Trang Thiết kế nhà panel 3D - Xingfa Tiếu Nghĩa -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tự thiết kế nhà lắp ráp panel 3D: chỉnh kích thước, loại panel, mái, màu, cửa; xoay xem 3D, tự tính diện tích, thử đặt nhà lên ảnh khu đất và gửi báo giá – Xingfa Tiếu Nghĩa.">
+    <link rel="icon" href="assets/images/logo.jpg">
+    <title data-i18n="chung.tieuDeThietKeNha">Thiết kế nhà panel 3D - Xingfa Tiếu Nghĩa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Be+Vietnam+Pro:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/thiet-ke.css">
+    <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "HomeAndConstructionBusiness",
+          "@id": "https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/#doanh-nghiep",
+          "name": "Xingfa Tiếu Nghĩa",
+          "legalName": "Công ty TNHH Cơ Khí Tiếu Nghĩa",
+          "url": "https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/",
+          "logo": "https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/assets/images/logo.jpg",
+          "image": "https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/assets/images/banner.jpg",
+          "description": "Gia công, lắp đặt cửa sắt, cửa nhôm Xingfa, cửa kính cường lực, nhà lắp ráp panel EPS/PU, mái che, tủ bếp nhôm tại Tây Ninh.",
+          "telephone": "+84976224875",
+          "email": "nhomkinhtieunghia@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "12 Ấp An Thuận",
+            "addressLocality": "Xã An Ninh",
+            "addressRegion": "Tây Ninh",
+            "addressCountry": "VN"
+          },
+          "openingHours": "Mo-Su 08:00-17:00",
+          "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Tây Ninh"
+          },
+          "sameAs": [
+            "https://www.facebook.com/cokhixingfatieunghia/"
+          ],
+          "priceRange": "Liên hệ",
+          "availableLanguage": [
+            "vi",
+            "en",
+            "zh"
+          ],
+          "knowsAbout": [
+            "Cửa sắt – Cổng – Lan can",
+            "Cửa nhôm Xingfa",
+            "Nhà lắp ráp panel",
+            "Tủ bếp & nội thất nhôm",
+            "Mái che hiện đại",
+            "Bảo trì & sửa chữa"
+          ]
+        }
+      ]
+    }
+    </script>
+    <noscript><style>[data-hieu-ung]{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body>
+    <div id="app">
+        <main>
+            <div class="page-banner tk-banner">
+                <div class="container">
+                    <h1 data-i18n="thietKe.tieuDe">Thiết kế nhà panel 3D</h1>
+                    <div class="breadcrumb">
+                        <a href="index.html" data-i18n="menu.trangChu">Trang chủ</a> ›
+                        <span data-i18n="thietKe.tieuDe">Thiết kế nhà panel 3D</span>
+                    </div>
+                </div>
+            </div>
+
+            <section class="tk-section">
+                <div class="tk-container">
+                    <div class="tk-tabs" role="tablist">
+                        <button type="button" class="tk-tab active" data-tab="3d">🏠 <span data-i18n="thietKe.tab3D">Thiết kế 3D</span></button>
+                        <button type="button" class="tk-tab" data-tab="anh">📷 <span data-i18n="thietKe.tabAnh">Thử lên ảnh đất nhà bạn</span></button>
+                        <button type="button" class="tk-tab" data-tab="gui">📩 <span data-i18n="thietKe.tabGui">Gửi thiết kế để báo giá</span></button>
+                    </div>
+
+                    <!-- ===== TAB 1: THIẾT KẾ 3D ===== -->
+                    <div class="tk-panel active" id="tab-3d">
+                        <div class="tk-bo-cuc">
+                            <aside class="tk-tuy-chon" id="bang-tuy-chon">
+                                <details open>
+                                    <summary data-i18n="thietKe.nhomCongNang">Công năng</summary>
+                                    <p class="tk-goi-y" data-i18n="thietKe.goiYCongNang">Chọn công năng để tự điền cấu hình gợi ý</p>
+                                    <div class="tk-chips" id="ds-cong-nang"></div>
+                                </details>
+                                <details open>
+                                    <summary data-i18n="thietKe.nhomKichThuoc">Kích thước</summary>
+                                    <div class="tk-truot" data-truong="dai">
+                                        <label for="o-dai" data-i18n="thietKe.dai">Chiều dài</label>
+                                        <input type="range" id="truot-dai" min="3" max="30" step="0.5">
+                                        <span class="tk-o-so"><input type="number" id="o-dai" min="3" max="30" step="0.5"> m</span>
+                                    </div>
+                                    <div class="tk-truot" data-truong="rong">
+                                        <label for="o-rong" data-i18n="thietKe.rong">Chiều rộng</label>
+                                        <input type="range" id="truot-rong" min="3" max="15" step="0.5">
+                                        <span class="tk-o-so"><input type="number" id="o-rong" min="3" max="15" step="0.5"> m</span>
+                                    </div>
+                                    <div class="tk-truot" data-truong="cao">
+                                        <label for="o-cao" data-i18n="thietKe.cao">Chiều cao tường</label>
+                                        <input type="range" id="truot-cao" min="2.8" max="6" step="0.1">
+                                        <span class="tk-o-so"><input type="number" id="o-cao" min="2.8" max="6" step="0.1"> m</span>
+                                    </div>
+                                </details>
+                                <details open>
+                                    <summary data-i18n="thietKe.nhomPanel">Tấm panel</summary>
+                                    <div class="tk-chips" id="ds-loai-panel"></div>
+                                    <p class="tk-goi-y" id="mo-ta-panel"></p>
+                                    <div class="tk-nhan-nho" data-i18n="thietKe.doDay">Độ dày</div>
+                                    <div class="tk-chips" id="ds-do-day"></div>
+                                </details>
+                                <details open>
+                                    <summary data-i18n="thietKe.nhomMai">Mái</summary>
+                                    <div class="tk-chips" id="ds-kieu-mai"></div>
+                                </details>
+                                <details open>
+                                    <summary data-i18n="thietKe.nhomMau">Màu sắc</summary>
+                                    <div class="tk-nhan-nho" data-i18n="thietKe.mauVach">Màu vách</div>
+                                    <div class="tk-o-mau" id="ds-mau-vach"></div>
+                                    <div class="tk-nhan-nho" data-i18n="thietKe.mauMai">Màu mái</div>
+                                    <div class="tk-o-mau" id="ds-mau-mai"></div>
+                                </details>
+                                <details open>
+                                    <summary data-i18n="thietKe.nhomCua">Cửa</summary>
+                                    <div class="tk-dem">
+                                        <span data-i18n="thietKe.soCuaDi">Số cửa đi</span>
+                                        <div class="tk-dem-nut"><button type="button" data-dem="so_cua_di" data-buoc="-1">−</button><output id="so-cua-di">2</output><button type="button" data-dem="so_cua_di" data-buoc="1">+</button></div>
+                                    </div>
+                                    <div class="tk-chips" id="ds-loai-cua"></div>
+                                    <div class="tk-dem">
+                                        <span data-i18n="thietKe.soCuaSo">Số cửa sổ</span>
+                                        <div class="tk-dem-nut"><button type="button" data-dem="so_cua_so" data-buoc="-1">−</button><output id="so-cua-so">4</output><button type="button" data-dem="so_cua_so" data-buoc="1">+</button></div>
+                                    </div>
+                                </details>
+                            </aside>
+
+                            <div class="tk-cot-phai">
+                                <div class="tk-khung-3d" id="khung-3d">
+                                    <div class="tk-dang-tai" id="dang-tai-3d"><span class="tk-xoay"></span><span data-i18n="thietKe.dangTai3D">Đang tải mô hình 3D...</span></div>
+                                    <div class="tk-goi-y-keo" data-i18n="thietKe.goiYKeo">Kéo để xoay · cuộn / chụm 2 ngón để phóng to</div>
+                                    <button type="button" class="tk-nut-dung-goc" id="nut-dung-goc" hidden>📷 <span data-i18n="thietKe.dungGocNay">Dùng góc nhìn này cho ảnh ghép</span></button>
+                                </div>
+                                <div class="tk-thanh-nut" id="thanh-nut-3d">
+                                    <button type="button" data-goc="truoc">⬜ <span data-i18n="thietKe.truoc">Trước</span></button>
+                                    <button type="button" data-goc="ben">◧ <span data-i18n="thietKe.ben">Bên</span></button>
+                                    <button type="button" data-goc="tren">⬒ <span data-i18n="thietKe.tren">Trên</span></button>
+                                    <button type="button" id="nut-tu-xoay">⟳ <span data-i18n="thietKe.tuXoay">Tự xoay</span></button>
+                                    <button type="button" id="nut-chup">📸 <span data-i18n="thietKe.chupAnh">Chụp ảnh</span></button>
+                                    <button type="button" id="nut-chia-se">🔗 <span data-i18n="thietKe.chiaSe">Chia sẻ</span></button>
+                                </div>
+
+                                <div class="tk-ket-qua" id="bang-ket-qua">
+                                    <div class="tk-o-kq"><span data-i18n="thietKe.dtSan">Diện tích sàn</span><strong data-kq="dien_tich_san">0</strong><em>m²</em></div>
+                                    <div class="tk-o-kq"><span data-i18n="thietKe.dtVach">Diện tích vách panel</span><strong data-kq="dien_tich_vach">0</strong><em>m²</em></div>
+                                    <div class="tk-o-kq"><span data-i18n="thietKe.dtMai">Diện tích mái</span><strong data-kq="dien_tich_mai">0</strong><em>m²</em></div>
+                                    <div class="tk-o-kq"><span data-i18n="thietKe.soTam">Số tấm panel</span><strong data-kq="so_tam_panel">0</strong><em data-i18n="thietKe.tamUocTinh">tấm (ước tính)</em></div>
+                                    <div class="tk-o-kq"><span data-i18n="thietKe.theTich">Thể tích</span><strong data-kq="the_tich">0</strong><em>m³</em></div>
+                                    <div class="tk-o-kq tk-o-gia"><span data-i18n="thietKe.gia">Giá</span><strong data-i18n="thietKe.lienHe">Liên hệ</strong>
+                                        <button type="button" class="btn-chinh" data-mo-tab="gui" data-i18n="thietKe.nutGuiBaoGia">Gửi thiết kế để báo giá</button>
+                                    </div>
+                                </div>
+                                <p class="tk-chu-thich" data-i18n="thietKe.chuThichKq">Số liệu ước tính để tham khảo, kỹ thuật viên sẽ khảo sát và báo giá chính xác.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ===== TAB 2: THỬ LÊN ẢNH ĐẤT ===== -->
+                    <div class="tk-panel" id="tab-anh">
+                        <div class="ta-khung">
+                            <div class="ta-vung-tha" id="vung-tha-anh">
+                                <div class="ta-bieu-tuong">🏞️</div>
+                                <p data-i18n="thietKe.thaAnh">Kéo thả ảnh khu đất của bạn vào đây</p>
+                                <label class="btn-chinh ta-nut-chon">
+                                    <span data-i18n="thietKe.chonAnh">Chọn ảnh</span>
+                                    <input type="file" id="chon-anh-dat" accept="image/jpeg,image/png" hidden>
+                                </label>
+                                <p class="tk-goi-y">🔒 <span data-i18n="thietKe.riengTu">Ảnh chỉ xử lý trên máy của bạn, không tải lên mạng</span></p>
+                            </div>
+                            <div class="ta-san-khau" id="san-khau-anh" hidden>
+                                <img id="anh-dat" alt="">
+                                <img id="anh-nha" class="ta-nha" alt="" draggable="false">
+                            </div>
+                            <div class="ta-dieu-khien" id="dieu-khien-anh" hidden>
+                                <label class="ta-co"><span data-i18n="thietKe.kichThuocNha">Kích thước</span>
+                                    <input type="range" id="co-nha" min="10" max="150" value="45">
+                                </label>
+                                <button type="button" class="btn-phu" id="nut-lat">⇋ <span data-i18n="thietKe.latNgang">Lật ngang</span></button>
+                                <button type="button" class="btn-phu" id="nut-chup-lai">🔄 <span data-i18n="thietKe.chupLaiGoc">Chụp lại góc nhìn</span></button>
+                                <button type="button" class="btn-phu" id="nut-doi-anh">🖼️ <span data-i18n="thietKe.doiAnh">Đổi ảnh khác</span></button>
+                                <button type="button" class="btn-chinh" id="nut-luu-ghep">💾 <span data-i18n="thietKe.luuAnhGhep">Lưu ảnh ghép</span></button>
+                            </div>
+                            <p class="tk-goi-y ta-meo" id="meo-keo" hidden data-i18n="thietKe.meoKeo">Kéo ngôi nhà bằng chuột hoặc ngón tay để đặt đúng vị trí.</p>
+                        </div>
+                    </div>
+
+                    <!-- ===== TAB 3: GỬI THIẾT KẾ ===== -->
+                    <div class="tk-panel" id="tab-gui">
+                        <div class="tg-bo-cuc" id="khung-gui">
+                            <div class="tg-tom-tat">
+                                <h3 data-i18n="thietKe.tomTat">Tóm tắt thiết kế</h3>
+                                <img id="anh-tom-tat" class="tg-anh" alt="">
+                                <dl class="tg-ds" id="ds-tom-tat"></dl>
+                                <dl class="tg-ds tg-ds-kq" id="ds-ket-qua-gui"></dl>
+                                <button type="button" class="btn-phu" data-mo-tab="3d">✏️ <span data-i18n="thietKe.suaThietKe">Sửa thiết kế</span></button>
+                            </div>
+                            <form class="tg-form" id="form-gui-tk" novalidate>
+                                <h3 data-i18n="thietKe.thongTinLienHe">Thông tin liên hệ</h3>
+                                <label class="dl-o"><span data-i18n="datLich.hoTen">Họ và tên *</span><input type="text" id="tg-ho-ten" maxlength="80" autocomplete="name"></label>
+                                <label class="dl-o"><span data-i18n="datLich.sdt">Số điện thoại (10 số) *</span><input type="tel" id="tg-sdt" maxlength="10" inputmode="numeric" autocomplete="tel"></label>
+                                <label class="dl-o"><span data-i18n="thietKe.diaChiCT">Địa chỉ công trình</span><input type="text" id="tg-dia-chi" maxlength="200"></label>
+                                <label class="dl-o"><span data-i18n="thietKe.ghiChu">Ghi chú</span><textarea id="tg-ghi-chu" rows="3" maxlength="500"></textarea></label>
+                                <p class="dl-loi" id="tg-loi" role="alert"></p>
+                                <button type="submit" class="btn-chinh dl-nut-lon" id="nut-gui-tk" data-i18n="thietKe.nutGui">Gửi thiết kế</button>
+                            </form>
+                        </div>
+                        <div class="dl-the dl-thanh-cong" id="tg-thanh-cong" hidden>
+                            <div class="dl-dau-tick">✓</div>
+                            <h2 data-i18n="thietKe.daGui">Đã gửi thiết kế!</h2>
+                            <p data-i18n="thietKe.maThietKe">Mã thiết kế của bạn</p>
+                            <div class="dl-ma" id="ma-tk-moi">TK-00000</div>
+                            <p class="dl-mo-ta"><span data-i18n="thietKe.camOnGui">Kỹ thuật viên sẽ gọi lại tư vấn và báo giá. Hotline:</span> <a href="tel:0976224875"><strong>097-622-4875</strong></a></p>
+                            <div class="dl-hang-nut">
+                                <a class="btn-phu" href="dat-lich.html?dich_vu=nha-panel" data-i18n="thietKe.datLichKhaoSat">Đặt lịch khảo sát</a>
+                                <button type="button" class="btn-chinh" id="nut-thiet-ke-moi" data-i18n="thietKe.thietKeMoi">Thiết kế mẫu khác</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+        }
+      }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="assets/lang/vi.js"></script>
+    <script src="assets/lang/en.js"></script>
+    <script src="assets/lang/zh.js"></script>
+    <script src="assets/js/ngon-ngu.js"></script>
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/layout.js"></script>
+    <script src="assets/js/hieu-ung.js"></script>
+    <script type="module" src="assets/js/thiet-ke-nha.js"></script>
+    <script type="module" src="assets/js/thu-anh.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+# Xingfa Tiếu Nghĩa (Công ty TNHH Cơ Khí Tiếu Nghĩa)
+
+> Steel doors, Xingfa aluminium doors and windows, tempered glass, prefab EPS/PU sandwich panel houses, modern canopies and aluminium kitchens – fabricated and installed in Tây Ninh, Vietnam. Free on-site survey; prices are quoted after the survey ("Contact for quote"). Website in Vietnamese, English and Simplified Chinese.
+
+- Company: Tiếu Nghĩa Mechanical Co., Ltd (Công ty TNHH Cơ Khí Tiếu Nghĩa), brand "Xingfa Tiếu Nghĩa"
+- Address: 12 Ấp An Thuận, xã An Ninh, tỉnh Tây Ninh, Việt Nam
+- Hotline / Zalo: 097-622-4875 (+84 976 224 875) · Email: nhomkinhtieunghia@gmail.com
+- Opening hours: 08:00–17:00, Monday–Sunday · Service area: Tây Ninh and nearby areas
+- Facebook: https://www.facebook.com/cokhixingfatieunghia/
+- Languages: Vietnamese, English, Simplified Chinese (add ?lang=en or ?lang=zh to any page)
+
+## Services
+- [Steel Doors – Gates – Railings](https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/san-pham.html?nhom=cua-sat): Many designs – sturdy, safe and attractive.
+- [Xingfa Aluminium Doors](https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/san-pham.html?nhom=cua-nhom): Imported Xingfa aluminium with superior sound and heat insulation.
+- [Prefab Panel Houses](https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/san-pham.html?nhom=nha-panel): Very fast to build, cost-saving and well insulated.
+- [Aluminium Kitchens & Furniture](https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/san-pham.html?nhom=tu-bep): Termite- and mould-proof, durable and good-looking for years.
+- [Modern Canopies](https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/san-pham.html?nhom=mai-che): Shelter from sun and rain with modern designs and durable materials.
+- [Maintenance & Repair](https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/san-pham.html?nhom=bao-tri): Fast, professional and caring repairs.
+
+## Main pages
+- [Home](https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/index.html)
+- [About us & map](https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/gioi-thieu.html)
+- [Products](https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/san-pham.html)
+- [3D panel house designer](https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/thiet-ke-nha.html)
+- [Projects map & reviews](https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/cong-trinh.html)
+- [News](https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/tin-tuc.html)
+- [Book a survey & track progress](https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/dat-lich.html)
+- [Quote request cart](https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/bao-gia.html)
+- [For AI](https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/ai.html)
+
+## Details
+- [Full company information for AI (llms-full.txt)](https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/llms-full.txt): all 15 products, 5-step process, FAQ, pricing policy
+- [Sitemap](https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/sitemap.xml)
+
+## Tiếng Việt
+Xingfa Tiếu Nghĩa – Công ty TNHH Cơ Khí Tiếu Nghĩa: gia công, lắp đặt cửa sắt – cổng – lan can, cửa nhôm Xingfa, cửa kính cường lực, nhà lắp ráp panel EPS/PU, mái che, tủ bếp & nội thất nhôm, bảo trì sửa chữa tại Tây Ninh. Khảo sát đo đạc tận nơi miễn phí, báo giá sau khảo sát (giá: Liên hệ). Địa chỉ: 12 Ấp An Thuận, xã An Ninh, tỉnh Tây Ninh. Hotline/Zalo: 097-622-4875. Giờ làm việc 8:00–17:00, thứ Hai – Chủ nhật.
+
+## Optional
+- [Trang chủ tiếng Việt](https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/index.html)
+- [Sản phẩm](https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/san-pham.html) · [Tự thiết kế nhà panel 3D](https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/thiet-ke-nha.html) · [Đặt lịch khảo sát](https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/dat-lich.html)

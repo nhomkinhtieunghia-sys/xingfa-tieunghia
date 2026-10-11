@@ -1,0 +1,26 @@
+# robots.txt – Xingfa Tiếu Nghĩa
+# Khi đưa web lên tên miền khác: thay https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/ ở dòng Sitemap cuối file.
+User-agent: *
+Allow: /
+Disallow: /admin.html
+
+User-agent: GPTBot
+Allow: /
+Disallow: /admin.html
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /admin.html
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /admin.html
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /admin.html
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/sitemap.xml

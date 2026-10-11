@@ -1,0 +1,144 @@
+<!-- Trang Công trình - Xingfa Tiếu Nghĩa -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bản đồ các công trình cửa sắt, cửa nhôm Xingfa, nhà lắp ráp panel, mái che Xingfa Tiếu Nghĩa đã thi công tại Tây Ninh và đánh giá của khách hàng.">
+    <link rel="icon" href="assets/images/logo.jpg">
+    <title data-i18n="chung.tieuDeCongTrinh">Công trình - Xingfa Tiếu Nghĩa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Be+Vietnam+Pro:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "HomeAndConstructionBusiness",
+          "@id": "https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/#doanh-nghiep",
+          "name": "Xingfa Tiếu Nghĩa",
+          "legalName": "Công ty TNHH Cơ Khí Tiếu Nghĩa",
+          "url": "https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/",
+          "logo": "https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/assets/images/logo.jpg",
+          "image": "https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/assets/images/banner.jpg",
+          "description": "Gia công, lắp đặt cửa sắt, cửa nhôm Xingfa, cửa kính cường lực, nhà lắp ráp panel EPS/PU, mái che, tủ bếp nhôm tại Tây Ninh.",
+          "telephone": "+84976224875",
+          "email": "nhomkinhtieunghia@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "12 Ấp An Thuận",
+            "addressLocality": "Xã An Ninh",
+            "addressRegion": "Tây Ninh",
+            "addressCountry": "VN"
+          },
+          "openingHours": "Mo-Su 08:00-17:00",
+          "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Tây Ninh"
+          },
+          "sameAs": [
+            "https://www.facebook.com/cokhixingfatieunghia/"
+          ],
+          "priceRange": "Liên hệ",
+          "availableLanguage": [
+            "vi",
+            "en",
+            "zh"
+          ],
+          "knowsAbout": [
+            "Cửa sắt – Cổng – Lan can",
+            "Cửa nhôm Xingfa",
+            "Nhà lắp ráp panel",
+            "Tủ bếp & nội thất nhôm",
+            "Mái che hiện đại",
+            "Bảo trì & sửa chữa"
+          ]
+        }
+      ]
+    }
+    </script>
+    <noscript><style>[data-hieu-ung]{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body>
+    <div id="app">
+        <main>
+            <div class="page-banner">
+                <div class="container">
+                    <h1 data-i18n="congTrinh.tieuDe">Công trình đã thi công</h1>
+                    <div class="breadcrumb">
+                        <a href="index.html" data-i18n="menu.trangChu">Trang chủ</a> ›
+                        <span data-i18n="congTrinh.tieuDe">Công trình đã thi công</span>
+                    </div>
+                </div>
+            </div>
+
+            <section class="section ct-section">
+                <div class="container">
+                    <div class="ct-chips" id="ct-loc"></div>
+                    <div class="ct-bo-cuc">
+                        <div class="ct-ban-do-khung">
+                            <div id="ban-do" class="ct-ban-do" role="region" aria-label="Bản đồ công trình"></div>
+                        </div>
+                        <div class="ct-danh-sach" id="ct-danh-sach">
+                            <div class="ct-dang-tai" data-i18n="congTrinh.dangTai">Đang tải công trình...</div>
+                        </div>
+                    </div>
+                    <p class="ct-chu-thich">ℹ️ <span data-i18n="congTrinh.chuThich">Một số công trình đang được cập nhật hình ảnh thực tế.</span></p>
+                </div>
+            </section>
+
+            <!-- ĐÁNH GIÁ -->
+            <section class="section dg-section" id="danh-gia">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <span class="sub-title" data-i18n="congTrinh.dgPhu">KHÁCH HÀNG NÓI GÌ</span>
+                        <h2 class="section-title" data-i18n="congTrinh.dgTieuDe">Đánh giá của khách hàng</h2>
+                    </div>
+                    <div class="dg-bo-cuc">
+                        <div class="dg-tong-quan">
+                            <div class="dg-diem" id="dg-diem">–</div>
+                            <div class="dg-sao-lon" id="dg-sao-lon">☆☆☆☆☆</div>
+                            <div class="dg-so-luot" id="dg-so-luot"></div>
+                            <div class="dg-phan-bo" id="dg-phan-bo"></div>
+                        </div>
+                        <div class="dg-danh-sach" id="dg-danh-sach"></div>
+                    </div>
+
+                    <form class="dg-form" id="form-danh-gia" novalidate>
+                        <h3 data-i18n="congTrinh.guiDanhGia">Gửi đánh giá của bạn</h3>
+                        <div class="dg-form-luoi">
+                            <label class="dl-o"><span data-i18n="congTrinh.hoTen">Họ và tên *</span><input type="text" id="dg-ho-ten" maxlength="60" autocomplete="name"></label>
+                            <label class="dl-o"><span data-i18n="congTrinh.dichVu">Dịch vụ đã dùng (không bắt buộc)</span><select id="dg-dich-vu"></select></label>
+                            <div class="dl-o dl-o-rong">
+                                <span data-i18n="congTrinh.chonSao">Chọn số sao *</span>
+                                <div class="dg-chon-sao" id="dg-chon-sao" role="radiogroup">
+                                    <button type="button" data-sao="1" aria-label="1">★</button><button type="button" data-sao="2" aria-label="2">★</button><button type="button" data-sao="3" aria-label="3">★</button><button type="button" data-sao="4" aria-label="4">★</button><button type="button" data-sao="5" aria-label="5">★</button>
+                                </div>
+                            </div>
+                            <label class="dl-o dl-o-rong"><span data-i18n="congTrinh.noiDung">Nội dung đánh giá * (ít nhất 10 ký tự)</span><textarea id="dg-noi-dung" rows="4" maxlength="1000"></textarea></label>
+                        </div>
+                        <p class="dl-loi" id="dg-loi" role="alert"></p>
+                        <button type="submit" class="btn-chinh" id="nut-gui-dg" data-i18n="congTrinh.nutGui">Gửi đánh giá</button>
+                    </form>
+                    <div class="dl-the dl-thanh-cong dg-cam-on" id="dg-cam-on" hidden>
+                        <div class="dl-dau-tick">✓</div>
+                        <h3 data-i18n="congTrinh.camOn">Cảm ơn! Đánh giá sẽ hiển thị sau khi được duyệt.</h3>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="assets/lang/vi.js"></script>
+    <script src="assets/lang/en.js"></script>
+    <script src="assets/lang/zh.js"></script>
+    <script src="assets/js/ngon-ngu.js"></script>
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/layout.js"></script>
+    <script src="assets/js/hieu-ung.js"></script>
+    <script src="assets/js/cong-trinh.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+/* ===== Trang Thiết kế nhà panel 3D ===== */
+.tk-banner { padding: 70px 0 56px; }
+.tk-section { padding: 32px 0 70px; background: var(--mau-nen-nhat); }
+.tk-container { max-width: 1360px; margin: 0 auto; padding: 0 20px; }
+
+.tk-tabs { display: flex; gap: 8px; background: #fff; padding: 6px; border-radius: 999px; box-shadow: var(--bong); width: fit-content; max-width: 100%; margin: 0 auto 24px; overflow-x: auto; scrollbar-width: none; }
+.tk-tab { border: none; background: transparent; padding: 11px 22px; border-radius: 999px; font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 15px; color: var(--mau-chu-nhat); cursor: pointer; white-space: nowrap; transition: all .3s var(--chuyen-dong); }
+.tk-tab:hover { color: var(--mau-chinh); }
+.tk-tab.active { background: var(--mau-chinh); color: #fff; box-shadow: 0 4px 12px rgba(26,36,82,.25); }
+.tk-panel { display: none; }
+.tk-panel.active { display: block; animation: dlHien .35s var(--chuyen-dong); }
+
+/* Bố cục tab 3D */
+.tk-bo-cuc { display: grid; grid-template-columns: 340px 1fr; gap: 24px; align-items: start; }
+.tk-tuy-chon { background: #fff; border-radius: var(--bo-goc); box-shadow: var(--bong); padding: 8px 18px; max-height: calc(70vh + 120px); overflow-y: auto; position: sticky; top: 90px; }
+.tk-tuy-chon details { border-bottom: 1px solid var(--mau-vien); padding: 12px 0; }
+.tk-tuy-chon details:last-child { border-bottom: none; }
+.tk-tuy-chon summary { font-family: 'Poppins', sans-serif; font-weight: 600; color: var(--mau-chinh); cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+.tk-tuy-chon summary::-webkit-details-marker { display: none; }
+.tk-tuy-chon summary::after { content: '▾'; color: var(--mau-chu-nhat); transition: transform .25s; }
+.tk-tuy-chon details:not([open]) summary::after { transform: rotate(-90deg); }
+.tk-tuy-chon details > *:not(summary) { margin-top: 10px; }
+.tk-goi-y { font-size: 13px; color: var(--mau-chu-nhat); margin: 6px 0 0; line-height: 1.5; }
+.tk-nhan-nho { font-size: 13px; font-weight: 600; color: var(--mau-chu); margin-top: 12px !important; }
+
+.tk-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.tk-chip { border: 1px solid var(--mau-vien); background: #fff; color: var(--mau-chu); padding: 7px 12px; border-radius: 999px; font: 500 13px 'Be Vietnam Pro', sans-serif; cursor: pointer; transition: all .2s; }
+.tk-chip:hover { border-color: var(--mau-phu); color: var(--mau-phu); }
+.tk-chip.active { background: var(--mau-phu); border-color: var(--mau-phu); color: #fff; }
+
+.tk-truot { display: grid; grid-template-columns: 1fr auto; gap: 4px 10px; align-items: center; margin-top: 12px; }
+.tk-truot label { font-size: 13px; font-weight: 500; }
+.tk-truot input[type=range] { grid-column: 1 / -1; grid-row: 2; width: 100%; accent-color: var(--mau-nhan); }
+.tk-o-so { grid-column: 2; grid-row: 1; font-size: 13px; color: var(--mau-chu-nhat); }
+.tk-o-so input { width: 64px; padding: 5px 6px; border: 1px solid var(--mau-vien); border-radius: 6px; font: inherit; color: var(--mau-chinh); font-weight: 600; text-align: right; }
+
+.tk-o-mau { display: flex; gap: 10px; flex-wrap: wrap; }
+.tk-mau { width: 34px; height: 34px; border-radius: 50%; border: 2px solid #fff; box-shadow: 0 0 0 1px var(--mau-vien); cursor: pointer; transition: transform .2s, box-shadow .2s; }
+.tk-mau:hover { transform: scale(1.1); }
+.tk-mau.active { box-shadow: 0 0 0 3px var(--mau-phu); transform: scale(1.08); }
+
+.tk-dem { display: flex; justify-content: space-between; align-items: center; font-size: 14px; }
+.tk-dem-nut { display: flex; align-items: center; border: 1px solid var(--mau-vien); border-radius: 8px; overflow: hidden; }
+.tk-dem-nut button { width: 34px; height: 32px; border: none; background: var(--mau-nen-nhat); font-size: 18px; cursor: pointer; color: var(--mau-chinh); }
+.tk-dem-nut button:hover { background: #E3E8F3; }
+.tk-dem-nut output { min-width: 36px; text-align: center; font-weight: 600; color: var(--mau-chinh); }
+
+/* Khung 3D */
+.tk-cot-phai { min-width: 0; }
+.tk-khung-3d { position: relative; height: 70vh; min-height: 420px; border-radius: var(--bo-goc); overflow: hidden; background: linear-gradient(180deg, #CFE6FA 0%, #EAF4FD 55%, #FFFFFF 100%); box-shadow: var(--bong); touch-action: none; }
+.tk-khung-3d canvas { display: block; width: 100% !important; height: 100% !important; cursor: grab; }
+.tk-khung-3d canvas:active { cursor: grabbing; }
+.tk-dang-tai { position: absolute; inset: 0; display: flex; flex-direction: column; gap: 12px; align-items: center; justify-content: center; color: var(--mau-chinh); font-weight: 500; text-align: center; padding: 20px; }
+.tk-dang-tai.loi { color: var(--mau-nhan); }
+.tk-xoay { width: 40px; height: 40px; border: 4px solid rgba(26,36,82,.15); border-top-color: var(--mau-nhan); border-radius: 50%; animation: tkXoay 0.9s linear infinite; }
+@keyframes tkXoay { to { transform: rotate(360deg); } }
+.tk-goi-y-keo { position: absolute; top: 12px; left: 50%; transform: translateX(-50%); background: rgba(255,255,255,.85); padding: 5px 12px; border-radius: 999px; font-size: 12px; color: var(--mau-chu-nhat); pointer-events: none; white-space: nowrap; }
+.tk-nut-dung-goc { position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%); background: var(--mau-nhan); color: #fff; border: none; padding: 12px 20px; border-radius: 999px; font: 600 14px 'Poppins', sans-serif; cursor: pointer; box-shadow: 0 8px 20px rgba(229,57,53,.4); animation: tkNay 1.6s ease-in-out infinite; z-index: 2; }
+@keyframes tkNay { 50% { transform: translateX(-50%) translateY(-4px); } }
+
+.tk-thanh-nut { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin: -28px auto 0; position: relative; z-index: 3; background: #fff; width: fit-content; max-width: calc(100% - 24px); padding: 8px; border-radius: 14px; box-shadow: 0 8px 24px rgba(26,36,82,.15); }
+.tk-thanh-nut button { border: 1px solid var(--mau-vien); background: #fff; padding: 8px 14px; border-radius: 8px; font: 500 14px 'Be Vietnam Pro', sans-serif; color: var(--mau-chinh); cursor: pointer; transition: all .2s; white-space: nowrap; }
+.tk-thanh-nut button:hover { border-color: var(--mau-phu); color: var(--mau-phu); }
+.tk-thanh-nut button.active { background: var(--mau-chinh); color: #fff; border-color: var(--mau-chinh); }
+
+/* Bảng kết quả */
+.tk-ket-qua { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 22px; }
+.tk-o-kq { background: #fff; border-radius: var(--bo-goc); box-shadow: var(--bong); padding: 16px 18px; display: flex; flex-direction: column; gap: 2px; border-top: 3px solid var(--mau-phu); }
+.tk-o-kq span { font-size: 13px; color: var(--mau-chu-nhat); }
+.tk-o-kq strong { font-family: 'Poppins', sans-serif; font-size: 28px; color: var(--mau-chinh); line-height: 1.2; }
+.tk-o-kq em { font-style: normal; font-size: 13px; color: var(--mau-chu-nhat); }
+.tk-o-kq.nhay strong { animation: tkNhay .5s var(--chuyen-dong); }
+@keyframes tkNhay { 40% { color: var(--mau-nhan); transform: scale(1.06); } }
+.tk-o-gia { border-top-color: var(--mau-nhan); }
+.tk-o-gia strong { color: var(--mau-nhan); }
+.tk-o-gia .btn-chinh { margin-top: 8px; padding: 9px 12px; font-size: 13px; }
+.tk-chu-thich { font-size: 13px; color: var(--mau-chu-nhat); text-align: center; margin: 14px 0 0; }
+
+/* Tab 2 – thử ảnh */
+.ta-khung { max-width: 1000px; margin: 0 auto; }
+.ta-vung-tha { background: #fff; border: 2px dashed #B8C4DA; border-radius: var(--bo-goc); padding: 60px 20px; text-align: center; transition: all .2s; }
+.ta-vung-tha.dang-tha { border-color: var(--mau-nhan); background: #FFF5F5; }
+.ta-bieu-tuong { font-size: 56px; }
+.ta-vung-tha p { margin: 10px 0; }
+.ta-nut-chon { display: inline-block; margin: 8px 0; padding: 12px 28px; }
+.ta-san-khau { position: relative; width: 100%; border-radius: var(--bo-goc); overflow: hidden; box-shadow: var(--bong); background: #222; user-select: none; }
+.ta-san-khau #anh-dat { width: 100%; height: 100%; object-fit: fill; display: block; }
+.ta-nha { position: absolute; cursor: grab; touch-action: none; filter: drop-shadow(0 6px 10px rgba(0,0,0,.25)); outline: 2px dashed transparent; outline-offset: 4px; transition: outline-color .2s; }
+.ta-nha:hover, .ta-nha.dang-keo { outline-color: rgba(255,255,255,.8); }
+.ta-nha.dang-keo { cursor: grabbing; }
+.ta-dieu-khien { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: center; margin-top: 16px; background: #fff; padding: 12px; border-radius: var(--bo-goc); box-shadow: var(--bong); }
+.ta-co { display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 500; }
+.ta-co input { width: 160px; accent-color: var(--mau-nhan); }
+.ta-meo { text-align: center; }
+
+/* Tab 3 – gửi thiết kế */
+.tg-bo-cuc { display: grid; grid-template-columns: 1.1fr 1fr; gap: 24px; align-items: start; }
+.tg-tom-tat, .tg-form { background: #fff; border-radius: var(--bo-goc); box-shadow: var(--bong); padding: 26px; }
+.tg-form { display: flex; flex-direction: column; gap: 14px; }
+.tg-tom-tat h3, .tg-form h3 { margin: 0 0 6px; font-size: 20px; }
+.tg-anh { width: 100%; border-radius: 10px; margin: 10px 0; aspect-ratio: 16/10; object-fit: cover; background: linear-gradient(180deg,#CFE6FA,#fff); }
+.tg-ds { display: grid; grid-template-columns: auto 1fr; gap: 6px 16px; margin: 10px 0; font-size: 14px; }
+.tg-ds dt { color: var(--mau-chu-nhat); }
+.tg-ds dd { margin: 0; font-weight: 600; color: var(--mau-chinh); text-align: right; }
+.tg-ds-kq { background: var(--mau-nen-nhat); padding: 12px 14px; border-radius: 10px; }
+.tg-tom-tat .btn-phu { margin-top: 6px; }
+#tab-gui .dl-thanh-cong { max-width: 640px; margin: 0 auto; }
+#tab-gui .dl-ma { font-size: 34px; }
+
+@media (max-width: 1024px) {
+  .tk-bo-cuc { grid-template-columns: 1fr; }
+  .tk-cot-phai { order: -1; }
+  .tk-tuy-chon { position: static; max-height: none; }
+  .tk-khung-3d { height: 55vh; min-height: 320px; }
+  .tg-bo-cuc { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .tk-container { padding: 0 12px; }
+  .tk-tab { padding: 10px 14px; font-size: 13px; }
+  .tk-ket-qua { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .tk-o-kq { padding: 12px; }
+  .tk-o-kq strong { font-size: 22px; }
+  .tk-thanh-nut { gap: 6px; padding: 6px; }
+  .tk-thanh-nut button { padding: 7px 10px; font-size: 13px; }
+  .tk-goi-y-keo { font-size: 11px; }
+  .ta-co input { width: 120px; }
+}
+
+/* Phần tử bị ẩn bằng thuộc tính hidden luôn ẩn (kể cả khi có display: grid/flex) */
+.tk-section [hidden] { display: none !important; }

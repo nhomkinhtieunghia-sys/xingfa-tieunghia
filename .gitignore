@@ -1,0 +1,13 @@
+# Không đưa lên Github
+_to_delete/
+xingfa-tieunghia/
+Bài kiểm tra cuối khóa.pdf
+Bài kiểm tra cuối khóa.docx
+.vscode/
+.DS_Store
+Thumbs.db
+node_modules/
+.env
+
+# file tạm (xóa được)
+docs/hinh-chup/_tam_web.tgz

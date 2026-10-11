@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Khi đổi tên miền: thay https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/ bằng địa chỉ thật (vd https://xingfatieunghia.com/thiet-ke-nha/) -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/index.html</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/gioi-thieu.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/san-pham.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/thiet-ke-nha.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/cong-trinh.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/tin-tuc.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/dat-lich.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/bao-gia.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/ai.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/chi-tiet.html?id=1</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/chi-tiet.html?id=2</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/chi-tiet.html?id=3</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/chi-tiet.html?id=4</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/chi-tiet.html?id=5</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/chi-tiet.html?id=6</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/chi-tiet.html?id=7</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/chi-tiet.html?id=8</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/chi-tiet.html?id=9</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/chi-tiet.html?id=10</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/chi-tiet.html?id=11</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/chi-tiet.html?id=12</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/chi-tiet.html?id=13</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/chi-tiet.html?id=14</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/chi-tiet.html?id=15</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/bai-viet.html?bai=nha-panel-eps-hay-pu</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/bai-viet.html?bai=quy-trinh-bao-gia-thi-cong</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/bai-viet.html?bai=phong-thuy-cua-chinh</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/llms.txt</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/llms-full.txt</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
+</urlset>

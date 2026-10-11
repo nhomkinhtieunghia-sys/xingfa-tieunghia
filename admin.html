@@ -1,0 +1,86 @@
+<!-- Trang Quản trị - Xingfa Tiếu Nghĩa (chỉ admin đăng nhập mới dùng được) -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" href="assets/images/logo.jpg">
+    <title>Quản trị - Xingfa Tiếu Nghĩa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Be+Vietnam+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/admin.css">
+</head>
+<body class="ad-body">
+    <!-- Hộp đăng nhập -->
+    <div class="ad-dang-nhap" id="ad-dang-nhap" hidden>
+        <form class="ad-hop-dn" id="form-dang-nhap">
+            <img src="assets/images/logo.jpg" alt="Logo Xingfa Tiếu Nghĩa" class="ad-logo-dn">
+            <h1>Quản trị website</h1>
+            <p>Xingfa Tiếu Nghĩa</p>
+            <label class="dl-o"><span>Email</span><input type="email" id="dn-email" autocomplete="username" required></label>
+            <label class="dl-o"><span>Mật khẩu</span><input type="password" id="dn-mat-khau" autocomplete="current-password" required></label>
+            <p class="dl-loi" id="dn-loi" role="alert"></p>
+            <button type="submit" class="btn-chinh dl-nut-lon" id="nut-dang-nhap">Đăng nhập</button>
+            <a href="index.html" class="ad-ve-web">← Về trang web</a>
+        </form>
+    </div>
+
+    <!-- Khung quản trị -->
+    <div class="ad-khung" id="ad-khung" hidden>
+        <aside class="ad-thanh-ben">
+            <a href="index.html" class="ad-thuong-hieu" target="_blank" title="Mở trang web">
+                <img src="assets/images/logo.jpg" alt="Logo">
+                <span><strong>Xingfa Tiếu Nghĩa</strong><small>Quản trị</small></span>
+            </a>
+            <nav class="ad-menu" id="ad-menu"></nav>
+            <div class="ad-tai-khoan">
+                <span id="ad-email"></span>
+                <button type="button" class="btn-phu" id="nut-dang-xuat">Đăng xuất</button>
+            </div>
+        </aside>
+        <main class="ad-noi-dung">
+            <header class="ad-dau">
+                <h1 id="ad-tieu-de">Tổng quan</h1>
+                <div class="ad-dau-phai" id="ad-dau-phai"></div>
+            </header>
+            <div id="ad-trang"></div>
+        </main>
+    </div>
+
+    <!-- Modal dùng chung -->
+    <div class="ad-modal-nen" id="ad-modal" hidden>
+        <div class="ad-modal" role="dialog" aria-modal="true">
+            <header><h2 id="ad-modal-tieu-de"></h2><button type="button" class="ad-dong" data-dong-modal aria-label="Đóng">✕</button></header>
+            <div class="ad-modal-than" id="ad-modal-than"></div>
+            <footer id="ad-modal-chan"></footer>
+        </div>
+    </div>
+    <!-- Hộp xác nhận -->
+    <div class="dl-modal-nen" id="ad-xac-nhan" hidden>
+        <div class="dl-modal" role="alertdialog" aria-modal="true">
+            <h3>Xác nhận</h3>
+            <p id="ad-xac-nhan-chu"></p>
+            <div class="dl-hang-nut">
+                <button type="button" class="btn-phu" id="ad-xn-khong">Không</button>
+                <button type="button" class="btn-chinh" id="ad-xn-co">Đồng ý</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/admin.js"></script>
+    <script src="assets/js/admin-dich-ai.js"></script>
+    <script src="assets/js/admin-thong-ke.js"></script>
+    <script src="assets/js/admin-tien-do.js"></script>
+    <script src="assets/js/admin-cong-trinh.js"></script>
+    <script src="assets/js/admin-bai-viet.js"></script>
+    <script>Admin.khoiDong();</script>
+</body>
+</html>
