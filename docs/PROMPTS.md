@@ -218,7 +218,7 @@ Làm bao-gia.html + bao-gia.js theo DESIGN.md mục 7 "Giỏ báo giá":
   hiện "Cảm ơn anh/chị, Xingfa Tiếu Nghĩa sẽ gọi lại trong thời gian sớm nhất" + hotline. Khóa nút khi đang gửi.
 ```
 
-**Kết quả:** Trang Giỏ báo giá chạy đúng: bảng giỏ có ảnh nhỏ, tên, số lượng +/- (SỬA), ô kích thước/ghi chú (SỬA), nút thùng rác (XÓA), "Xóa toàn bộ"; số trên biểu tượng giỏ cập nhật; giỏ trống hiện "Giỏ báo giá của bạn đang trống" + nút Xem sản phẩm. Form kiểm tra dữ liệu: nhập SĐT "12345" báo "Vui lòng nhập đầy đủ họ tên và số điện thoại hợp lệ (10 số)". Gửi hợp lệ → **INSERT thành công** vào bảng `yeu_cau_bao_gia` (kèm `danh_sach` JSON và `ngon_ngu`), xóa giỏ, hiện "Cảm ơn anh/chị, Xingfa Tiếu Nghĩa sẽ gọi lại trong thời gian sớm nhất! Hotline hỗ trợ: 097-622-4875". (Đã gửi 1 đơn thử tên "TEST Claude kiem tra" – xóa trong trang Quản trị sau.)
+**Kết quả:** Trang Giỏ báo giá chạy đúng: bảng giỏ có ảnh nhỏ, tên, số lượng +/- (SỬA), ô kích thước/ghi chú (SỬA), nút thùng rác (XÓA), "Xóa toàn bộ"; số trên biểu tượng giỏ cập nhật; giỏ trống hiện "Giỏ báo giá của bạn đang trống" + nút Xem sản phẩm. Form kiểm tra dữ liệu: nhập SĐT "12345" báo "Vui lòng nhập đầy đủ họ tên và số điện thoại hợp lệ (10 số)". Gửi hợp lệ → **INSERT thành công** vào bảng `yeu_cau_bao_gia` (kèm `danh_sach` JSON và `ngon_ngu`), xóa giỏ, hiện "Cảm ơn anh/chị, Xingfa Tiếu Nghĩa sẽ gọi lại trong thời gian sớm nhất! Hotline hỗ trợ: 0976 224 875". (Đã gửi 1 đơn thử tên "TEST Claude kiem tra" – xóa trong trang Quản trị sau.)
 
 **Sự cố phát sinh:** khi làm prompt này, Antigravity dùng PowerShell ghi lại 3 file `assets/lang/vi.js`, `en.js`, `zh.js` nên **hỏng mã hóa chữ** (vd nút hiện "ThÃªm vÃ o giá» bÃ¡o giÃ¡", tiếng Trung thành ký tự rác). Claude đã khôi phục bằng cách đổi ngược mã hóa (208 dòng, không mất chữ nào), lưu bản hỏng ở `_to_delete/lang-hong-ma-hoa/`. Bài học: yêu cầu AI **luôn ghi file bằng UTF-8 (không BOM)**, không dùng lệnh PowerShell `Set-Content`/`Out-File` mặc định để sửa file có tiếng Việt/Trung.
 
@@ -343,7 +343,7 @@ Làm tab 2 "Thử lên ảnh đất nhà bạn" của thiet-ke-nha.html trong fi
 - Ghi chú nhỏ "Ảnh chỉ xử lý trên máy của bạn". Chạy tốt trên điện thoại.
 ```
 
-**Kết quả:** (Claude làm) File `assets/js/thu-anh.js`. Chọn ảnh/kéo thả ảnh JPG, PNG (đọc bằng FileReader, không tải lên mạng) → ngôi nhà 3D hiện tại được chụp **nền trong suốt, giữ bóng đổ**, tự cắt viền trống rồi đặt giữa ảnh. Kéo nhà bằng chuột (đã thử kéo sang bãi cỏ), thanh trượt Kích thước, Lật ngang, **Chụp lại góc nhìn** (quay về tab 3D, xoay xong bấm nút đỏ "Dùng góc nhìn này" để quay lại), Đổi ảnh khác. **Lưu ảnh ghép** vẽ 2 lớp lên canvas đúng vị trí/tỉ lệ, kèm dòng chữ nhỏ "Xingfa Tiếu Nghĩa · 097-622-4875", tải file `thiet-ke-tieu-nghia.jpg`. Đổi thiết kế rồi quay lại tab ảnh → tự chụp lại nhà mới.
+**Kết quả:** (Claude làm) File `assets/js/thu-anh.js`. Chọn ảnh/kéo thả ảnh JPG, PNG (đọc bằng FileReader, không tải lên mạng) → ngôi nhà 3D hiện tại được chụp **nền trong suốt, giữ bóng đổ**, tự cắt viền trống rồi đặt giữa ảnh. Kéo nhà bằng chuột (đã thử kéo sang bãi cỏ), thanh trượt Kích thước, Lật ngang, **Chụp lại góc nhìn** (quay về tab 3D, xoay xong bấm nút đỏ "Dùng góc nhìn này" để quay lại), Đổi ảnh khác. **Lưu ảnh ghép** vẽ 2 lớp lên canvas đúng vị trí/tỉ lệ, kèm dòng chữ nhỏ "Xingfa Tiếu Nghĩa · 0976 224 875", tải file `thiet-ke-tieu-nghia.jpg`. Đổi thiết kế rồi quay lại tab ảnh → tự chụp lại nhà mới.
 
 📷 Ảnh: `docs/hinh-chup/p10-thu-anh-dat.png`
 

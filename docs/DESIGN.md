@@ -80,9 +80,9 @@ Khai báo trong `:root` của `assets/css/style.css`:
 
 | Thành phần | Mô tả |
 |---|---|
-| Thanh trên cùng (top bar) | Cao 36px, nền `--mau-chinh`, chữ trắng nhỏ. Trái: 📞 097-622-4875 · ⏰ giờ làm việc (ẩn trên điện thoại). Phải: **"Ngôn ngữ:" + nút chọn ngôn ngữ** (xem mục 11) |
-| Header | Nền trắng, sticky, bóng nhẹ; **khi cuộn xuống thì thu nhỏ chiều cao + nền mờ (backdrop-filter)**. Trái: logo + tên. Phải: menu + nút đỏ "Gọi 097-622-4875". Mục "Thiết kế 3D" có nhãn đỏ nhỏ "Mới". Trang đang mở gạch chân `--mau-phu`. Điện thoại: menu ☰ trượt từ phải |
-| Footer | Nền `--mau-chinh`, chữ trắng. 3 cột: (1) logo + giới thiệu, (2) link tới tất cả trang + "Quản trị", (3) địa chỉ, hotline, email, giờ làm việc, Facebook. Dòng cuối © 2026 Công Ty TNHH Cơ Khí Tiếu Nghĩa |
+| Thanh trên cùng (top bar) | Cao 36px, nền `--mau-chinh`, chữ trắng nhỏ. Trái: 📞 0976 224 875 · ⏰ giờ làm việc (ẩn trên điện thoại). Phải: **"Ngôn ngữ:" + nút chọn ngôn ngữ** (xem mục 11) |
+| Header | Nền trắng, sticky, bóng nhẹ; **khi cuộn xuống thì thu nhỏ chiều cao + nền mờ (backdrop-filter)**. Trái: logo + tên. Phải: menu + nút đỏ "Gọi 0976 224 875". Mục "Thiết kế 3D" có nhãn đỏ nhỏ "Mới". Trang đang mở gạch chân `--mau-phu`. Điện thoại: menu ☰ trượt từ phải |
+| Footer | Nền `--mau-chinh`, chữ trắng. 3 cột: (1) logo + giới thiệu, (2) link tới tất cả trang + "Quản trị", (3) địa chỉ, hotline, email, giờ làm việc, Facebook. Dòng cuối © 2026 Công ty TNHH Cơ Khí Tiếu Nghĩa |
 | Nút chính | Nền `--mau-nhan`, chữ trắng, bo 8px, hover đậm hơn + bóng |
 | Nút phụ | Viền + chữ `--mau-phu`, nền trắng |
 | Thẻ sản phẩm | Ảnh 4:3 (hover phóng nhẹ ảnh), chip nhóm, tên, mô tả 2 dòng, "Giá: Liên hệ", nút "Xem chi tiết" |

@@ -35,12 +35,12 @@
 
 - Tên: **Công ty TNHH Cơ Khí Tiếu Nghĩa** (TIẾU có dấu SẮC, không viết "Tiểu")
 - Thương hiệu: **Xingfa Tiếu Nghĩa**
-- Hotline/Zalo: **097-622-4875** (link gọi: `tel:0976224875`, Zalo: `https://zalo.me/0976224875`)
+- Hotline/Zalo: **0976 224 875** (link gọi: `tel:0976224875`, Zalo: `https://zalo.me/0976224875`)
 - Email: **nhomkinhtieunghia@gmail.com**
 - Địa chỉ: **12 Ấp An Thuận, xã An Ninh, tỉnh Tây Ninh**
 - Giờ làm việc: **Thứ 2 – Chủ nhật, 8:00 – 17:00**
 - Facebook: https://www.facebook.com/cokhixingfatieunghia/
-- Kinh nghiệm: hơn 10 năm trong nghề · 8 thành viên
+- Kinh nghiệm: đội thợ hơn 10 năm trong nghề · 8 thành viên
 - Sứ mệnh: mang đến sản phẩm cửa sắt, cửa nhôm và giải pháp nhà lắp ráp panel chất lượng, an toàn, bền vững; đội ngũ thợ lành nghề, quy trình sản xuất khép kín; đồng hành từ tư vấn – thiết kế – thi công – bảo hành.
 - Giá sản phẩm: **không ghi giá**, luôn hiển thị **"Liên hệ"** (kể cả trang thiết kế 3D).
 - **Không tự bịa số liệu** (số công trình, số khách hàng…). Chỉ dùng: 10+ năm, 8 thành viên, 6 nhóm dịch vụ, số sản phẩm/công trình đếm từ database.
