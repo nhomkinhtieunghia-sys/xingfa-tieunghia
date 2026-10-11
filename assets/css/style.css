@@ -1835,3 +1835,59 @@ a.ai-lop:hover { border-color: var(--mau-phu); }
   height: auto; position: static; box-shadow: none; z-index: auto; margin-top: 0; backdrop-filter: none;
 }
 .dg-the header, .ad-the-yc header, .ad-the-yc footer, .ad-dau { background: transparent; padding: 0; color: inherit; }
+
+/* ===== Khối Bản đồ Google Maps & Liên hệ ===== */
+.map-wrapper {
+  border-radius: var(--bo-goc);
+  overflow: hidden;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+  border: 1px solid var(--mau-vien);
+  background: var(--mau-nen-nhat);
+}
+.map-wrapper iframe {
+  width: 100%;
+  height: 400px;
+  display: block;
+  border: 0;
+}
+.contact-info-card {
+  background: #fff;
+  border: 1px solid var(--mau-vien);
+  border-radius: var(--bo-goc);
+  padding: 36px 32px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.06);
+}
+.contact-info-card h3 {
+  color: var(--mau-chinh);
+  font-size: 22px;
+  margin-bottom: 22px;
+  border-bottom: 2px solid var(--mau-nen-nhat);
+  padding-bottom: 12px;
+}
+.contact-list-detail {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 26px 0;
+}
+.contact-list-detail li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 16px;
+  font-size: 15px;
+  color: var(--mau-chu);
+  line-height: 1.5;
+}
+.contact-list-detail li svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+@media (max-width: 768px) {
+  .map-wrapper iframe {
+    height: 320px;
+  }
+  .contact-info-card {
+    padding: 24px 20px;
+  }
+}
+

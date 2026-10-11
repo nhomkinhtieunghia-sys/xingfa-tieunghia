@@ -62,7 +62,7 @@ Menu: Trang chủ · Giới thiệu · Sản phẩm · Đặt lịch khảo sát
 
 | # | Trang | File | Bố cục & nội dung |
 |---|---|---|---|
-| 1 | **Trang chủ** (Home) | `index.html` | Banner chuyển động + chữ gõ tự động · 6 nhóm dịch vụ · Khối "Tự thiết kế nhà panel 3D" · Sản phẩm nổi bật (database) · Vì sao chọn chúng tôi · Con số đếm tăng · Quy trình 5 bước · Đánh giá khách hàng (database) · Khối kêu gọi |
+| 1 | **Trang chủ** (Home) | `index.html` | Banner chuyển động + chữ gõ tự động · 6 nhóm dịch vụ · Khối "Tự thiết kế nhà panel 3D" · Sản phẩm nổi bật (database) · Vì sao chọn chúng tôi · Con số đếm tăng · Quy trình 5 bước · Đánh giá khách hàng (database) · Câu hỏi thường gặp · **Nhúng Google Maps chỉ đường đến xưởng** · Khối kêu gọi |
 | 2 | **Về chúng tôi** (About) | `gioi-thieu.html` | Giới thiệu, sứ mệnh · Con số · 4 giá trị cốt lõi · **Google Maps** địa chỉ công ty + liên hệ |
 | 3 | Sản phẩm | `san-pham.html` | Lưới sản phẩm từ database · lọc 6 nhóm · tìm kiếm |
 | 4 | **Chi tiết sản phẩm** (Detail) | `chi-tiet.html?id=…` | Ảnh lớn, mô tả, vật liệu, ưu điểm, bảo hành, "Liên hệ" · thêm vào giỏ · nút Tự thiết kế 3D (nhóm nhà panel) · sản phẩm cùng nhóm |
@@ -143,7 +143,7 @@ Ngoài ra mọi trang có: thanh trên cùng với **"Ngôn ngữ:" + nút chọ
 ### 3.4. Chức năng khác
 | Mã | Chức năng |
 |---|---|
-| F24 | **Nhúng Google Maps** địa chỉ công ty (trang Về chúng tôi) |
+| F24 | **Nhúng Google Maps** địa chỉ xưởng và chỉ đường (trang Trang Chủ và Về chúng tôi) |
 | F25 | Nút nổi gọi điện + Zalo mọi trang |
 | F26 | Responsive điện thoại, máy tính bảng, máy tính |
 | F27 | Thông báo toast, hộp xác nhận trong trang |

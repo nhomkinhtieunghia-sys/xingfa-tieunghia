@@ -47,7 +47,7 @@ Hiện nay khách hay hỏi ChatGPT, Gemini, Perplexity: *"Làm cửa nhôm Xing
 | Trang chủ, Về chúng tôi, Chi tiết sản phẩm | 3 | `index.html`, `gioi-thieu.html`, `chi-tiet.html` (+ 9 trang khác, liên kết qua menu) |
 | Database | 3 | Supabase: 8 bảng, kho ảnh, Edge Function dịch AI |
 | Thêm / sửa / xóa | 2 | Khách: gửi báo giá, đặt lịch, đổi/hủy lịch, gửi thiết kế, gửi đánh giá · Quản trị: thêm/sửa/xóa sản phẩm, bài viết, công trình, cập nhật tiến độ, duyệt đánh giá |
-| Google Maps | 0,5 | Nhúng ở trang Giới thiệu; trang Công trình có thêm bản đồ ghim 10 công trình |
+| Google Maps / Nhúng Media | 0,5 | Nhúng Google Maps chỉ đường đến xưởng ở cả Trang Chủ (`index.html`) và trang Giới thiệu (`gioi-thieu.html`); trang Công trình có thêm bản đồ ghim 10 công trình |
 | File .md | 0,5 | `README`, `PRD`, `DESIGN`, `DATABASE`, `PROMPTS`, `BAO-CAO`, `HUONG-DAN`, `TOM-TAT` |
 | Github Public | 0,5 | https://github.com/nhomkinhtieunghia-sys/xingfa-tieunghia |
 | Deploy | 0,5 | Github Pages (link ở đầu trang) |
