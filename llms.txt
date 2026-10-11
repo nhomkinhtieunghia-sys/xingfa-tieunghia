@@ -4,7 +4,7 @@
 
 - Company: Tiếu Nghĩa Mechanical Co., Ltd (Công ty TNHH Cơ Khí Tiếu Nghĩa), brand "Xingfa Tiếu Nghĩa"
 - Address: 12 Ấp An Thuận, xã An Ninh, tỉnh Tây Ninh, Việt Nam
-- Hotline / Zalo: 097-622-4875 (+84 976 224 875) · Email: nhomkinhtieunghia@gmail.com
+- Hotline / Zalo: 0976 224 875 (+84 976 224 875) · Email: nhomkinhtieunghia@gmail.com
 - Opening hours: 08:00–17:00, Monday–Sunday · Service area: Tây Ninh and nearby areas
 - Facebook: https://www.facebook.com/cokhixingfatieunghia/
 - Languages: Vietnamese, English, Simplified Chinese (add ?lang=en or ?lang=zh to any page)
@@ -33,7 +33,7 @@
 - [Sitemap](https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/sitemap.xml)
 
 ## Tiếng Việt
-Xingfa Tiếu Nghĩa – Công ty TNHH Cơ Khí Tiếu Nghĩa: gia công, lắp đặt cửa sắt – cổng – lan can, cửa nhôm Xingfa, cửa kính cường lực, nhà lắp ráp panel EPS/PU, mái che, tủ bếp & nội thất nhôm, bảo trì sửa chữa tại Tây Ninh. Khảo sát đo đạc tận nơi miễn phí, báo giá sau khảo sát (giá: Liên hệ). Địa chỉ: 12 Ấp An Thuận, xã An Ninh, tỉnh Tây Ninh. Hotline/Zalo: 097-622-4875. Giờ làm việc 8:00–17:00, thứ Hai – Chủ nhật.
+Xingfa Tiếu Nghĩa – Công ty TNHH Cơ Khí Tiếu Nghĩa: gia công, lắp đặt cửa sắt – cổng – lan can, cửa nhôm Xingfa, cửa kính cường lực, nhà lắp ráp panel EPS/PU, mái che, tủ bếp & nội thất nhôm, bảo trì sửa chữa tại Tây Ninh. Khảo sát đo đạc tận nơi miễn phí, báo giá sau khảo sát (giá: Liên hệ). Địa chỉ: 12 Ấp An Thuận, xã An Ninh, tỉnh Tây Ninh. Hotline/Zalo: 0976 224 875. Giờ làm việc 8:00–17:00, thứ Hai – Chủ nhật.
 
 ## Optional
 - [Trang chủ tiếng Việt](https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/index.html)

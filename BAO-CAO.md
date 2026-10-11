@@ -21,7 +21,7 @@
 
 **Lĩnh vực:** Cơ khí – xây dựng: gia công, lắp đặt cửa sắt, cổng, lan can; cửa nhôm Xingfa, cửa kính cường lực; nhà lắp ráp panel (EPS, PU); mái che; tủ bếp & nội thất nhôm; bảo trì sửa chữa.
 
-**Thương hiệu:** **Xingfa Tiếu Nghĩa** – thương hiệu **có thật** của Công ty TNHH Cơ Khí Tiếu Nghĩa, 12 Ấp An Thuận, xã An Ninh, tỉnh Tây Ninh. Hotline/Zalo 097-622-4875. Website gốc: https://xingfatieunghia.com
+**Thương hiệu:** **Xingfa Tiếu Nghĩa** – thương hiệu **có thật** của Công ty TNHH Cơ Khí Tiếu Nghĩa, 12 Ấp An Thuận, xã An Ninh, tỉnh Tây Ninh. Hotline/Zalo 0976 224 875. Website gốc: https://xingfatieunghia.com
 
 **Mục tiêu website:** không chỉ giới thiệu công ty mà còn là **công cụ bán hàng thật**: khách tự **thiết kế nhà panel 3D**, thử ngôi nhà lên ảnh khu đất của mình, gửi yêu cầu báo giá, đặt lịch khảo sát và **theo dõi tiến độ công trình** trực tuyến; chủ doanh nghiệp có trang **quản trị + thống kê** để xử lý mọi yêu cầu.
 

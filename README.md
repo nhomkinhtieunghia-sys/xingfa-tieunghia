@@ -81,4 +81,4 @@ HTML · CSS · JavaScript thuần · Supabase (database, đăng nhập, kho ản
 3. Mở `index.html` bằng Live Server (trang 3D cần chạy qua Live Server, không mở trực tiếp file).
 
 ---
-© 2026 Công Ty TNHH Cơ Khí Tiếu Nghĩa · 12 Ấp An Thuận, An Ninh, Tây Ninh · 097-622-4875
+© 2026 Công ty TNHH Cơ Khí Tiếu Nghĩa · 12 Ấp An Thuận, An Ninh, Tây Ninh · 0976 224 875
