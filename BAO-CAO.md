@@ -214,8 +214,8 @@ Ngoài ra mọi trang có: thanh trên cùng với **"Ngôn ngữ:" + nút chọ
 ### Giai đoạn 3 – Đưa lên Github & Deploy
 | Bước | Kết quả |
 |---|---|
-| Push code lên repo Public `xingfa-tieunghia` | *(ghi kết quả + link)* |
-| Bật Github Pages (branch main, /root) | *(ghi link web chạy được)* |
+| Push code lên repo Public `xingfa-tieunghia` | Lần đầu push bằng Antigravity bị lỗi 403 (máy nhớ đăng nhập tài khoản Github cũ) → xóa thông tin đăng nhập cũ trong Windows Credential Manager, đăng nhập tài khoản `nhomkinhtieunghia-sys` bằng GitHub Desktop → **Publish branch** thành công. Repo: https://github.com/nhomkinhtieunghia-sys/xingfa-tieunghia |
+| Bật Github Pages (branch main, /root) | Web chạy được: https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/ — Claude kiểm tra trên web thật (11/10/2026): 15 trang/tệp đều trả 200, đọc được dữ liệu Supabase (15 sản phẩm, 10 công trình, 3 bài viết, 3 đánh giá), 3D chạy, bản đồ hiện 10 ghim, trang Quản trị hiện form đăng nhập, không có lỗi console |
 
 ---
 
@@ -223,13 +223,13 @@ Ngoài ra mọi trang có: thanh trên cùng với **"Ngôn ngữ:" + nút chọ
 
 | Tiêu chí | Điểm | Đạt |
 |---|---|---|
-| 1. Trang Chủ, Về Chúng Tôi, Chi tiết sản phẩm (+9 trang) | 3 | ☐ |
-| 2. Có database Supabase (8 bảng + kho ảnh + Edge Function) | 3 | ☐ |
-| 3. ≥ 2 chức năng insert/update/delete (có 12 chức năng F07–F17) | 2 | ☐ |
-| 4. Nhúng Google Maps | 0,5 | ☐ |
-| 5. Dùng file .md | 0,5 | ☐ |
-| 6. Github Public | 0,5 | ☐ |
-| 7. Deploy Github Pages | 0,5 | ☐ |
-| Các trang liên kết với nhau (không bị trừ) | – | ☐ |
-| Logo + hình ảnh thật của thương hiệu (không bị trừ) | – | ☐ |
-| Điểm cộng sáng tạo: 3D, thử ảnh, tiến độ, trợ lý, bản đồ, đánh giá, thống kê, 3 ngôn ngữ, lớp cho AI, tin tức + Dịch bằng AI | – | ☐ |
+| 1. Trang Chủ, Về Chúng Tôi, Chi tiết sản phẩm (+9 trang) | 3 | ☑ |
+| 2. Có database Supabase (8 bảng + kho ảnh + Edge Function) | 3 | ☑ |
+| 3. ≥ 2 chức năng insert/update/delete (có 12 chức năng F07–F17) | 2 | ☑ |
+| 4. Nhúng Google Maps | 0,5 | ☑ |
+| 5. Dùng file .md | 0,5 | ☑ |
+| 6. Github Public | 0,5 | ☑ |
+| 7. Deploy Github Pages | 0,5 | ☑ |
+| Các trang liên kết với nhau (không bị trừ) | – | ☑ |
+| Logo + hình ảnh thật của thương hiệu (không bị trừ) | – | ☑ |
+| Điểm cộng sáng tạo: 3D, thử ảnh, tiến độ, trợ lý, bản đồ, đánh giá, thống kê, 3 ngôn ngữ, lớp cho AI, tin tức + Dịch bằng AI | – | ☑ |
