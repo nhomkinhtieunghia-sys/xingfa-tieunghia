@@ -100,7 +100,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 2000);
 
     // 4. Số đếm tăng
-    const statEls = document.querySelectorAll('[data-dem]');
+    // Chỉ lấy ô có data-dem là SỐ (vd: data-dem="150"). Bỏ qua nút +/− ở trang Thiết kế 3D
+    // (data-dem="so_cua_di") – trước đây bị biến thành chữ NaN.
+    const statEls = [...document.querySelectorAll('[data-dem]')].filter(el => /^\d+$/.test(el.getAttribute('data-dem')));
     if (!prefersReducedMotion) {
         const countObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
