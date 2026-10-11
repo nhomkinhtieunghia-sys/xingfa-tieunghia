@@ -6,6 +6,7 @@ Website của **Công ty TNHH Cơ Khí Tiếu Nghĩa** (thương hiệu **Xingfa
 
 - 🌐 Web: `https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/`
 - 💻 Mã nguồn: `https://github.com/nhomkinhtieunghia-sys/xingfa-tieunghia`
+- ⭐ **Tóm tắt 2 phút cho người chấm: [TOM-TAT.md](TOM-TAT.md)**
 
 > Khi đưa lên tên miền khác (vd xingfatieunghia.com), đổi địa chỉ gốc `https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/` trong `sitemap.xml`, `robots.txt`, `llms.txt`, `llms-full.txt`, JSON-LD đầu các trang và `assets/js/config.js`.
 

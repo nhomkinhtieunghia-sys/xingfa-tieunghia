@@ -13,7 +13,7 @@
     const chu3 = obj => (obj ? (obj[ng()] || obj.vi || '') : '');
     const maHoa = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
     // **đậm** → <strong> (sau khi đã mã hóa)
-    const dinhDangChu = s => maHoa(s).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+    const dinhDangChu = s => maHoa(s).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br>');
 
     // ---------- Lưu / đọc lịch sử ----------
     function luu() {
@@ -122,6 +122,16 @@
     }
 
     function htmlTinBot(muc, laCuoi) {
+        if (muc.chu) {
+            let h = `<div class="tl-tin tl-bot"><p>${dinhDangChu(muc.chu)}</p>`;
+            if (laCuoi) {
+                const nutBatDau = (KB.hanhDong && KB.hanhDong.batDauLai) ? maHoa(chu3(KB.hanhDong.batDauLai)) : 'Bắt đầu lại';
+                const nutGoi = (KB.hanhDong && KB.hanhDong.goi) ? maHoa(chu3(KB.hanhDong.goi)) : 'Gọi tư vấn 097-622-4875';
+                h += `<div class="tl-hanh-dong"><button type="button" class="tl-hd" data-bat-dau-lai>${nutBatDau}</button><a class="tl-hd tl-hd-chinh" href="tel:0976224875">${nutGoi}</a></div>`;
+            }
+            h += '</div>';
+            return h;
+        }
         const node = KB.NODE[muc.node];
         if (!node) return '';
         let h = `<div class="tl-tin tl-bot"><p>${dinhDangChu(chu3(node.chu))}</p>`;
@@ -198,6 +208,53 @@
         }
     });
 
+    async function goiOpenRouter(cauHoi) {
+        dangGo = true;
+        ve();
+
+        // Khóa AI nằm trong Supabase (Edge Function "tro-ly-ai"), không nằm trong code web
+        if (typeof SUPABASE_URL === 'undefined' || !SUPABASE_URL) {
+            botNoi(timNode(cauHoi));
+            return;
+        }
+
+        try {
+            // Gửi tối đa 4 lượt gần nhất (trừ câu vừa hỏi) để AI hiểu ngữ cảnh
+            const messages = [];
+            lichSu.slice(0, -1).slice(-4).forEach(m => {
+                if (m.ai === 'ban') {
+                    const txt = m.nut ? chu3(KB.NUT[m.nut] && KB.NUT[m.nut].nhan) : m.chu;
+                    if (txt) messages.push({ role: "user", content: txt });
+                } else if (m.ai === 'bot') {
+                    const txt = m.chu || (KB.NODE[m.node] && chu3(KB.NODE[m.node].chu));
+                    if (txt) messages.push({ role: "assistant", content: txt });
+                }
+            });
+            messages.push({ role: "user", content: cauHoi });
+
+            const res = await fetch(`${SUPABASE_URL}/functions/v1/tro-ly-AI`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json", "apikey": SUPABASE_ANON_KEY },
+                body: JSON.stringify({ tin_nhan: messages, ngon_ngu: ng() }),
+                signal: AbortSignal.timeout(10000) // quá 10 giây → trả lời bằng kịch bản có sẵn
+            });
+
+            if (!res.ok) throw new Error("HTTP " + res.status);
+            const data = await res.json();
+            const traLoi = data.tra_loi;
+            if (!traLoi) throw new Error("Phản hồi rỗng");
+
+            dangGo = false;
+            lichSu.push({ ai: 'bot', chu: traLoi.trim() });
+            luu();
+            ve();
+        } catch (err) {
+            console.warn("Lỗi gọi trợ lý AI, chuyển về kịch bản trả lời sẵn:", err);
+            dangGo = false;
+            botNoi(timNode(cauHoi));
+        }
+    }
+
     khung.querySelector('#tl-form').addEventListener('submit', e => {
         e.preventDefault();
         const o = khung.querySelector('#tl-o-nhap');
@@ -205,7 +262,8 @@
         if (!cau || dangGo) return;
         o.value = '';
         lichSu.push({ ai: 'ban', chu: cau.slice(0, 200) });
-        botNoi(timNode(cau));
+        ve();
+        goiOpenRouter(cau);
     });
 
     document.addEventListener('doi-ngon-ngu', () => { veNhan(); if (!khung.hidden) ve(); });

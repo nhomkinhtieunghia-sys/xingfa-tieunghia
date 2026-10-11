@@ -397,6 +397,7 @@ Kiểm tra thật trên Live Server: mở trợ lý ở trang chủ → "Tôi c�
 
 **Prompt phụ:**
 - **12a** – "tủ bếp nhôm" bị hiểu là cửa nhôm → đưa từ khóa tủ bếp, mái che lên trước từ khóa nhôm → **đạt**.
+- **12b** – Trợ lý AI: chuyển khóa OpenRouter vào Edge Function tro-ly-AI, gọi Gemini trước, quá 10 giây thì trả lời bằng kịch bản có sẵn → **đạt**: Edge Function `tro-ly-AI` trả lời đúng nghiệp vụ, ngắn gọn, không lộ giá (Gemini `gemini-3.8-flash` xử lý câu hỏi tiếng Việt và tiếng Anh chuẩn; đã cấu hình giảm `thinkingBudget` và dự phòng OpenRouter; toàn bộ mã nguồn web không lưu khóa).
 
 ---
 

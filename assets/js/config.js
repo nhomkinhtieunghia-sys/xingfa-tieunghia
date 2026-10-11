@@ -3,6 +3,8 @@ const SUPABASE_URL = "https://mzopvxoyakqybboaugul.supabase.co";
 const SUPABASE_ANON_KEY = "sb_publishable_qI6kSOCZJPK4UI2lZ4e06g_PCgoc6TI";
 const DIA_CHI_WEB = "https://nhomkinhtieunghia-sys.github.io/xingfa-tieunghia/"; // đổi thành https://xingfatieunghia.com/thiet-ke-nha/ khi chạy thật
 
+// Trợ lý AI: khóa OpenRouter cất trong Supabase → Edge Functions → Secrets (hàm "tro-ly-ai"), KHÔNG để ở đây
+
 let db = null;
 if (typeof supabase !== 'undefined' && SUPABASE_URL && SUPABASE_ANON_KEY) {
     db = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
