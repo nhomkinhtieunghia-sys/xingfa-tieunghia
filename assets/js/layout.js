@@ -35,7 +35,7 @@ function taoTopBar() {
     
     topBar.innerHTML = `
         <div class="top-bar-left">
-            <span>${svgs.phone} 097-622-4875</span>
+            <span>${svgs.phone} 0976 224 875</span>
             <span class="an-mobile"> | ${svgs.clock} <span data-i18n="chung.gioLamViec">8:00 - 17:00 (T2 - CN)</span></span>
         </div>
         <div class="top-bar-right">
@@ -86,7 +86,7 @@ function taoHeader() {
             </nav>
             <div class="header-right">
                 <a href="tel:0976224875" class="btn-chinh btn-pill an-mobile">
-                    ${svgs.phone} <span data-i18n="chung.nutGoi">Gọi 097-622-4875</span>
+                    ${svgs.phone} <span data-i18n="chung.nutGoi">Gọi 0976 224 875</span>
                 </a>
                 <button class="menu-mobile-btn hien-mobile" aria-label="Menu">☰</button>
             </div>
@@ -153,7 +153,7 @@ function taoFooter() {
         <div class="container footer-container">
             <div class="footer-col">
                 <img src="assets/images/logo.jpg" alt="Logo" class="footer-logo">
-                <p class="footer-desc" data-i18n="footer.moTa">Công ty TNHH Cơ Khí Tiếu Nghĩa - Hơn 10 năm kinh nghiệm gia công, lắp đặt cửa sắt, cửa nhôm Xingfa và nhà lắp ráp panel.</p>
+                <p class="footer-desc" data-i18n="footer.moTa">Công ty TNHH Cơ Khí Tiếu Nghĩa – đội thợ hơn 10 năm kinh nghiệm gia công, lắp đặt cửa sắt, cửa nhôm Xingfa và nhà lắp ráp panel.</p>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/cokhixingfatieunghia/" target="_blank" class="social-btn" title="Facebook">${svgs.fb}</a>
                     <a href="https://zalo.me/0976224875" target="_blank" class="social-btn" title="Zalo">${svgs.zalo}</a>
@@ -170,8 +170,6 @@ function taoFooter() {
                     <li><a href="tin-tuc.html" data-i18n="menu.tinTuc">Tin tức</a></li>
                     <li><a href="dat-lich.html" data-i18n="menu.datLich">Đặt lịch & Tiến độ</a></li>
                     <li><a href="bao-gia.html" data-i18n="menu.gioBaoGia">Giỏ báo giá</a></li>
-                    <li class="footer-small-link"><a href="ai.html" data-i18n="footer.danhChoAI">Dành cho AI</a></li>
-                    <li class="footer-small-link"><a href="admin.html" data-i18n="footer.quanTri">Quản trị</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -189,7 +187,7 @@ function taoFooter() {
                 <h4 class="footer-title" data-i18n="footer.lienHe">Liên hệ</h4>
                 <ul class="footer-contact">
                     <li>${svgs.location} <span data-i18n="footer.diaChi">12 Ấp An Thuận, xã An Ninh, tỉnh Tây Ninh</span></li>
-                    <li>${svgs.phone} 097-622-4875</li>
+                    <li>${svgs.phone} 0976 224 875</li>
                     <li>${svgs.mail} nhomkinhtieunghia@gmail.com</li>
                     <li>${svgs.clock} <span data-i18n="chung.gioLamViec">8:00 - 17:00 (T2 - CN)</span></li>
                     <li>${svgs.globe} <a href="https://www.facebook.com/cokhixingfatieunghia/" target="_blank">Facebook</a></li>
@@ -197,7 +195,7 @@ function taoFooter() {
             </div>
         </div>
         <div class="footer-bottom">
-            © 2026 <span data-i18n="footer.banQuyen">Công Ty TNHH Cơ Khí Tiếu Nghĩa</span>
+            © 2026 <span data-i18n="footer.banQuyen">Công ty TNHH Cơ Khí Tiếu Nghĩa</span>
         </div>
     `;
     const app = document.getElementById('app') || document.body;

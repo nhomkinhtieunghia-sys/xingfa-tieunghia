@@ -361,6 +361,7 @@ export function khoiTao(phanTu) {
     controls.dampingFactor = 0.08;
     controls.maxPolarAngle = Math.PI / 2 - 0.03;
     controls.autoRotateSpeed = 1.2;
+    batZoomCoChuDich();
 
     scene.add(new THREE.HemisphereLight(0xffffff, 0x9bb58a, 1.4));
     den = new THREE.DirectionalLight(0xffffff, 2.2);
@@ -407,6 +408,28 @@ export function khoiTao(phanTu) {
     });
 }
 
+// Cuộn chuột trên khung 3D: mặc định để cuộn trang. Chỉ phóng to khi giữ Ctrl
+// hoặc khi khách đã bấm vào khung (bấm ra ngoài thì trả lại cuộn trang).
+function batZoomCoChuDich() {
+    let daChon = false;
+    let henGio = null;
+    const goiY = khung.querySelector('.tk-goi-y-keo');
+    controls.enableZoom = false;
+    khung.addEventListener('pointerdown', () => { daChon = true; controls.enableZoom = true; });
+    document.addEventListener('pointerdown', e => {
+        if (!khung.contains(e.target)) { daChon = false; controls.enableZoom = false; }
+    });
+    // capture: chạy trước OrbitControls để quyết định có zoom hay không
+    khung.addEventListener('wheel', e => {
+        controls.enableZoom = daChon || e.ctrlKey || e.metaKey;
+        if (!controls.enableZoom && goiY) {
+            goiY.classList.add('nhay-goi-y');
+            clearTimeout(henGio);
+            henGio = setTimeout(() => goiY.classList.remove('nhay-goi-y'), 1500);
+        }
+    }, { capture: true, passive: true });
+}
+
 export function capNhat(c) {
     const lanDau = !cauHinh;
     const doiKichThuoc = !cauHinh || cauHinh.dai !== c.dai || cauHinh.rong !== c.rong || cauHinh.cao !== c.cao;
@@ -437,6 +460,35 @@ export function batTuXoay(bat) {
 }
 
 // Chụp ảnh mô hình. nenTrongSuot: bỏ nền cỏ, giữ bóng đổ → dùng ghép lên ảnh đất.
+// Logo tải sẵn để đóng dấu khi chụp ảnh
+const logoTH = new Image();
+logoTH.src = 'assets/images/logo.jpg';
+
+// Dải thương hiệu dưới ảnh: logo + tên + hotline + website
+function dongDauThuongHieu(g, W, H) {
+    const cao = Math.max(44, Math.round(H * 0.075));
+    g.fillStyle = 'rgba(26,36,82,.92)';
+    g.fillRect(0, H - cao, W, cao);
+    const le = Math.round(cao * 0.18);
+    let x = le;
+    if (logoTH.complete && logoTH.naturalWidth) {
+        const s = cao - le * 2;
+        g.fillStyle = '#fff';
+        g.fillRect(x, H - cao + le, s, s);
+        g.drawImage(logoTH, x, H - cao + le, s, s);
+        x += s + le;
+    }
+    const co = Math.round(cao * 0.36);
+    g.textBaseline = 'middle';
+    g.textAlign = 'left';
+    g.fillStyle = '#fff';
+    g.font = `700 ${co}px "Poppins", sans-serif`;
+    g.fillText('Xingfa Tiếu Nghĩa', x, H - cao / 2);
+    g.textAlign = 'right';
+    g.font = `600 ${Math.round(co * 0.85)}px "Be Vietnam Pro", sans-serif`;
+    g.fillText('Hotline 0976 224 875 · xingfatieunghia.com', W - le, H - cao / 2);
+}
+
 export function chupAnh({ nenTrongSuot = false } = {}) {
     if (!renderer) return null;
     if (nhom) nhom.scale.y = 1;
@@ -464,6 +516,7 @@ export function chupAnh({ nenTrongSuot = false } = {}) {
         g.fillStyle = grad;
         g.fillRect(0, 0, cv.width, cv.height);
         g.drawImage(renderer.domElement, 0, 0);
+        dongDauThuongHieu(g, cv.width, cv.height);
         url = cv.toDataURL('image/png');
     }
     renderer.setPixelRatio(tiLeCu);

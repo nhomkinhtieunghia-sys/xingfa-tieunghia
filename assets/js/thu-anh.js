@@ -132,7 +132,7 @@
         g.shadowColor = 'rgba(0,0,0,.6)';
         g.shadowBlur = 4;
         g.textAlign = 'right';
-        g.fillText('Xingfa Tiếu Nghĩa · 097-622-4875', cv.width - co, cv.height - co);
+        g.fillText('Xingfa Tiếu Nghĩa · 0976 224 875', cv.width - co, cv.height - co);
         const a = document.createElement('a');
         a.href = cv.toDataURL('image/jpeg', 0.9);
         a.download = 'thiet-ke-tieu-nghia.jpg';

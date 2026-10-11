@@ -214,7 +214,7 @@ window.submitQuote = async function(e) {
         TieuNghia.luuGioHang([]);
         
         const tenKhach = document.getElementById('q-name').value;
-        const camOnTpl = t('baoGia.camOnTen') || "Cảm ơn {ten}, Xingfa Tiếu Nghĩa sẽ gọi lại trong thời gian sớm nhất! Hotline hỗ trợ: 097-622-4875";
+        const camOnTpl = t('baoGia.camOnTen') || "Cảm ơn {ten}, Xingfa Tiếu Nghĩa sẽ gọi lại trong thời gian sớm nhất! Hotline hỗ trợ: 0976 224 875";
         const camOnText = camOnTpl.replace('{ten}', tenKhach);
         
         document.getElementById('cart-content').innerHTML = `

@@ -13,7 +13,7 @@ window.TRO_LY = {
         xemChiTiet: { vi: 'Xem chi tiết', en: 'Details', zh: '查看详情' },
         '3d': { vi: '🏠 Thiết kế 3D', en: '🏠 3D design', zh: '🏠 3D设计' },
         datLich: { vi: '📅 Đặt lịch khảo sát', en: '📅 Book a survey', zh: '📅 预约勘察' },
-        goi: { vi: '📞 Gọi 097-622-4875', en: '📞 Call 097-622-4875', zh: '📞 致电 097-622-4875' },
+        goi: { vi: '📞 Gọi 0976 224 875', en: '📞 Call 0976 224 875', zh: '📞 致电 0976 224 875' },
         zalo: { vi: '💬 Nhắn Zalo', en: '💬 Zalo chat', zh: '💬 Zalo 聊天' },
         batDauLai: { vi: '↺ Hỏi việc khác', en: '↺ Ask something else', zh: '↺ 咨询其他' }
     },
@@ -178,9 +178,9 @@ window.TRO_LY = {
         // ---- Trả lời thông tin ----
         'tl-gia': {
             chu: {
-                vi: 'Giá phụ thuộc kích thước, vật liệu và hiện trạng công trình nên công ty **báo giá miễn phí sau khi khảo sát** đo đạc tận nơi. Anh/chị đặt lịch hoặc gọi hotline 097-622-4875 để được báo giá nhanh nhé.',
-                en: 'Prices depend on size, materials and site conditions, so we give a **free quote after an on-site survey**. Book a survey or call 097-622-4875 for a quick quote.',
-                zh: '价格取决于尺寸、材料和现场情况，因此我们在**上门勘察后免费报价**。请预约或致电 097-622-4875 快速获取报价。'
+                vi: 'Giá phụ thuộc kích thước, vật liệu và hiện trạng công trình nên công ty **báo giá miễn phí sau khi khảo sát** đo đạc tận nơi. Anh/chị đặt lịch hoặc gọi hotline 0976 224 875 để được báo giá nhanh nhé.',
+                en: 'Prices depend on size, materials and site conditions, so we give a **free quote after an on-site survey**. Book a survey or call 0976 224 875 for a quick quote.',
+                zh: '价格取决于尺寸、材料和现场情况，因此我们在**上门勘察后免费报价**。请预约或致电 0976 224 875 快速获取报价。'
             },
             hanhDong: ['datLich', 'goi', 'batDauLai']
         },
@@ -202,9 +202,9 @@ window.TRO_LY = {
         },
         'tl-dia-chi': {
             chu: {
-                vi: 'Công Ty TNHH Cơ Khí Tiếu Nghĩa – 12 Ấp An Thuận, xã An Ninh, tỉnh Tây Ninh. Giờ làm việc 8:00 – 17:00, thứ Hai đến Chủ nhật. Hotline 097-622-4875.',
-                en: 'Tiếu Nghĩa Mechanical Co., Ltd – 12 An Thuận Hamlet, An Ninh Commune, Tây Ninh. Open 8:00 – 17:00, Monday to Sunday. Hotline 097-622-4875.',
-                zh: 'Tiếu Nghĩa 机械有限公司 – 西宁省安宁乡安顺邑12号。营业时间：周一至周日 8:00 – 17:00。热线 097-622-4875。'
+                vi: 'Công ty TNHH Cơ Khí Tiếu Nghĩa – 12 Ấp An Thuận, xã An Ninh, tỉnh Tây Ninh. Giờ làm việc 8:00 – 17:00, thứ Hai đến Chủ nhật. Hotline 0976 224 875.',
+                en: 'Tiếu Nghĩa Mechanical Co., Ltd – 12 An Thuận Hamlet, An Ninh Commune, Tây Ninh. Open 8:00 – 17:00, Monday to Sunday. Hotline 0976 224 875.',
+                zh: 'Tiếu Nghĩa 机械有限公司 – 西宁省安宁乡安顺邑12号。营业时间：周一至周日 8:00 – 17:00。热线 0976 224 875。'
             },
             hanhDong: ['goi', 'zalo', 'batDauLai'], banDo: true
         },
@@ -250,9 +250,9 @@ window.TRO_LY = {
         },
         'khong-hieu': {
             chu: {
-                vi: 'Xin lỗi, mình chưa hiểu rõ câu hỏi 🙏 Anh/chị gọi hotline 097-622-4875 hoặc nhắn Zalo để được tư vấn trực tiếp, hoặc chọn một chủ đề bên dưới.',
-                en: 'Sorry, I did not quite understand 🙏 Please call 097-622-4875 or message us on Zalo for direct advice, or pick a topic below.',
-                zh: '抱歉，我没太明白您的问题 🙏 请致电 097-622-4875 或通过 Zalo 联系我们直接咨询，或选择下方话题。'
+                vi: 'Xin lỗi, mình chưa hiểu rõ câu hỏi 🙏 Anh/chị gọi hotline 0976 224 875 hoặc nhắn Zalo để được tư vấn trực tiếp, hoặc chọn một chủ đề bên dưới.',
+                en: 'Sorry, I did not quite understand 🙏 Please call 0976 224 875 or message us on Zalo for direct advice, or pick a topic below.',
+                zh: '抱歉，我没太明白您的问题 🙏 请致电 0976 224 875 或通过 Zalo 联系我们直接咨询，或选择下方话题。'
             },
             hanhDong: ['goi', 'zalo'], nut: ['cua', 'panel', 'maiTuBep', 'baoTri', 'thongTin']
         }
