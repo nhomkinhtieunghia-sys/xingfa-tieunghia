@@ -14,7 +14,7 @@ window.lang_vi = {
         tieuDeDatLich: "Đặt lịch & Tiến độ - Xingfa Tiếu Nghĩa",
         gioLamViec: "8:00 - 17:00 (T2 - CN)",
         khauHieu: "Cơ Khí – Cửa Nhôm – Nhà Panel",
-        nutGoi: "Gọi 097-622-4875"
+        nutGoi: "Gọi 0976 224 875"
     },
     baoGia: {
         tieuDe: "Giỏ Yêu Cầu Báo Giá",
@@ -34,7 +34,7 @@ window.lang_vi = {
         guiYeuCau: "Gửi yêu cầu báo giá",
         dangGui: "Đang gửi...",
         loiNhap: "Vui lòng nhập đầy đủ họ tên và số điện thoại hợp lệ (10 số).",
-        camOnTen: "Cảm ơn {ten}, Xingfa Tiếu Nghĩa sẽ gọi lại trong thời gian sớm nhất! Hotline hỗ trợ: 097-622-4875",
+        camOnTen: "Cảm ơn {ten}, Xingfa Tiếu Nghĩa sẽ gọi lại trong thời gian sớm nhất! Hotline hỗ trợ: 0976 224 875",
         loiGui: "Có lỗi xảy ra khi gửi yêu cầu. Vui lòng thử lại sau.",
         xacNhanXoaMot: "Bạn có chắc chắn muốn xóa sản phẩm này khỏi giỏ báo giá?",
         xacNhanXoaHet: "Bạn có chắc chắn muốn xóa TOÀN BỘ sản phẩm khỏi giỏ báo giá?",
@@ -70,11 +70,11 @@ window.lang_vi = {
         gioBaoGia: "Giỏ báo giá"
     },
     footer: {
-        moTa: "Công ty TNHH Cơ Khí Tiếu Nghĩa - Hơn 10 năm kinh nghiệm gia công, lắp đặt cửa sắt, cửa nhôm Xingfa và nhà lắp ráp panel.",
+        moTa: "Công ty TNHH Cơ Khí Tiếu Nghĩa – đội thợ hơn 10 năm kinh nghiệm gia công, lắp đặt cửa sắt, cửa nhôm Xingfa và nhà lắp ráp panel.",
         lienKet: "Liên kết",
         lienHe: "Liên hệ",
         diaChi: "12 Ấp An Thuận, xã An Ninh, tỉnh Tây Ninh",
-        banQuyen: "Công Ty TNHH Cơ Khí Tiếu Nghĩa",
+        banQuyen: "Công ty TNHH Cơ Khí Tiếu Nghĩa",
         danhChoAI: "Dành cho AI",
         quanTri: "Quản trị",
         dichVu: "Dịch vụ"
@@ -143,7 +143,7 @@ window.lang_vi = {
         khongDoiDuoc: "Không thể thay đổi: lịch đã được khảo sát hoặc đã hủy.",
         loiNhap: "Vui lòng nhập đủ họ tên, số điện thoại hợp lệ (10 số), địa chỉ và ngày hẹn.",
         loiNgay: "Ngày hẹn không được ở quá khứ.",
-        loiMang: "Có lỗi kết nối, vui lòng thử lại hoặc gọi 097-622-4875.",
+        loiMang: "Có lỗi kết nối, vui lòng thử lại hoặc gọi 0976 224 875.",
         ngay: "Ngày hẹn",
         trangThai: "Trạng thái",
         hienTai: "Hiện tại"
@@ -192,7 +192,7 @@ window.lang_vi = {
         cuaNhomXingfa: "Cửa nhôm Xingfa",
         cuaPanel: "Cửa panel",
         dangTai3D: "Đang tải mô hình 3D...",
-        goiYKeo: "Kéo để xoay · cuộn / chụm 2 ngón để phóng to",
+        goiYKeo: "Kéo để xoay · Ctrl + cuộn hoặc chụm 2 ngón để phóng to",
         truoc: "Trước",
         ben: "Bên",
         tren: "Trên",
@@ -286,7 +286,7 @@ window.lang_vi = {
     trangChu: {
         goChu: "Cửa nhôm Xingfa|Nhà lắp ráp panel|Cổng sắt mỹ thuật|Tủ bếp nhôm",
         bannerTieuDe: "Chuyên Gia Công Cửa Sắt, Cửa Nhôm Xingfa & Nhà Lắp Ráp Panel Tại Tây Ninh",
-        bannerMoTa: "Hơn 10 năm kinh nghiệm mang đến giải pháp tối ưu cho công trình của bạn.",
+        bannerMoTa: "Đội thợ hơn 10 năm kinh nghiệm mang đến giải pháp tối ưu cho công trình của bạn.",
         nhanBaoGia: "Nhận báo giá",
         thietKeNha3D: "Thiết kế nhà 3D",
         dichVuPhu: "LĨNH VỰC HOẠT ĐỘNG",
@@ -332,9 +332,9 @@ window.lang_vi = {
         faqChinh: "Câu Hỏi Thường Gặp",
         ctaChinh: "Sẵn Sàng Cho Công Trình Của Bạn?",
         datLichKhaoSat: "Đặt lịch khảo sát miễn phí",
-        goiNgay: "Gọi 097-622-4875",
+        goiNgay: "Gọi 0976 224 875",
         dangTai: "Đang tải...",
-        vsKinhNghiemDesc: "Hơn 10 năm hoạt động trong ngành gia công cửa sắt, cửa nhôm và nhà lắp ráp panel",
+        vsKinhNghiemDesc: "Đội thợ hơn 10 năm trong nghề gia công cửa sắt, cửa nhôm và nhà lắp ráp panel",
         vsChatLuongDesc: "Nguyên vật liệu chính hãng, quy trình sản xuất khép kín, kiểm tra nghiêm ngặt trước khi bàn giao",
         vsGiaCaDesc: "Báo giá minh bạch, cạnh tranh, không phát sinh chi phí ẩn trong quá trình thi công",
         vsBaoHanhDesc: "Cam kết bảo hành sản phẩm, hỗ trợ sửa chữa nhanh chóng khi khách hàng cần",
@@ -366,8 +366,8 @@ window.lang_vi = {
     },
     gioiThieu: {
         veChungToiPhu: "VỀ CHÚNG TÔI",
-        veChungToiChinh: "Công Ty TNHH Cơ Khí Tiếu Nghĩa",
-        doan1: "Thành lập và hoạt động tại Tây Ninh, Tiếu Nghĩa tự hào là đơn vị uy tín với hơn 10 năm kinh nghiệm trong lĩnh vực gia công, lắp đặt cửa sắt, cửa nhôm Xingfa và thi công nhà lắp ráp panel.",
+        veChungToiChinh: "Công ty TNHH Cơ Khí Tiếu Nghĩa",
+        doan1: "Thành lập và hoạt động tại Tây Ninh, Tiếu Nghĩa tự hào quy tụ đội thợ hơn 10 năm kinh nghiệm trong lĩnh vực gia công, lắp đặt cửa sắt, cửa nhôm Xingfa và thi công nhà lắp ráp panel.",
         doan2: "Chúng tôi luôn đặt chất lượng sản phẩm và sự hài lòng của khách hàng lên hàng đầu. Với đội ngũ thợ lành nghề, quy trình làm việc khép kín và trang thiết bị hiện đại, Tiếu Nghĩa cam kết mang đến những sản phẩm bền đẹp, an toàn và tối ưu chi phí nhất.",
         giaTriPhu: "NỀN TẢNG PHÁT TRIỂN",
         giaTriChinh: "4 Giá Trị Cốt Lõi",
@@ -384,7 +384,7 @@ window.lang_vi = {
         chiDuong: "Chỉ đường",
         lienHeChungToi: "Liên Hệ Trực Tiếp",
         lhDiaChi: "12 Ấp An Thuận, xã An Ninh, tỉnh Tây Ninh",
-        lhDienThoai: "097-622-4875",
+        lhDienThoai: "0976 224 875",
         lhEmail: "nhomkinhtieunghia@gmail.com",
         lhGio: "8:00 - 17:00 (T2 - CN)"
     }

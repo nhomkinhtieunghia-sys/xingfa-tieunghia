@@ -14,7 +14,7 @@ window.lang_zh = {
         tieuDeDatLich: "预约与进度 - Xingfa Tieu Nghia",
         gioLamViec: "8:00 - 17:00 (周一至周日)",
         khauHieu: "机械 – 铝门 – 夹芯板",
-        nutGoi: "致电 097-622-4875"
+        nutGoi: "致电 0976 224 875"
     },
     baoGia: {
         tieuDe: "报价请求车",
@@ -34,7 +34,7 @@ window.lang_zh = {
         guiYeuCau: "提交报价请求",
         dangGui: "提交中...",
         loiNhap: "请输入您的全名和有效的电话号码（10位）。",
-        camOnTen: "感谢您 {ten}，Xingfa Tieu Nghia将尽快与您联系！服务热线：097-622-4875",
+        camOnTen: "感谢您 {ten}，Xingfa Tieu Nghia将尽快与您联系！服务热线：0976 224 875",
         loiGui: "提交时出错。请稍后再试。",
         xacNhanXoaMot: "您确定要从此报价车中删除此产品吗？",
         xacNhanXoaHet: "您确定要清空报价车中的所有产品吗？",
@@ -70,7 +70,7 @@ window.lang_zh = {
         gioBaoGia: "报价车"
     },
     footer: {
-        moTa: "Tieu Nghia 机械有限公司 - 拥有超过10年的铁门、兴发铝合金门和装配式夹芯板房屋加工与安装经验。",
+        moTa: "Tieu Nghia 机械有限公司 - 工匠团队拥有超过10年的铁门、兴发铝合金门和装配式夹芯板房屋加工与安装经验。",
         lienKet: "链接",
         lienHe: "联系",
         diaChi: "西宁省安宁社安顺邑12号",
@@ -143,7 +143,7 @@ window.lang_zh = {
         khongDoiDuoc: "无法更改：已完成勘察或预约已取消。",
         loiNhap: "请填写姓名、有效的10位电话号码、地址和日期。",
         loiNgay: "日期不能早于今天。",
-        loiMang: "网络错误，请重试或致电 097-622-4875。",
+        loiMang: "网络错误，请重试或致电 0976 224 875。",
         ngay: "日期",
         trangThai: "状态",
         hienTai: "当前"
@@ -192,7 +192,7 @@ window.lang_zh = {
         cuaNhomXingfa: "兴发铝合金门",
         cuaPanel: "夹芯板门",
         dangTai3D: "正在加载3D模型...",
-        goiYKeo: "拖动旋转 · 滚轮/双指缩放",
+        goiYKeo: "拖动旋转 · Ctrl+滚轮或双指缩放",
         truoc: "正面",
         ben: "侧面",
         tren: "俯视",
@@ -286,7 +286,7 @@ window.lang_zh = {
     trangChu: {
         goChu: "兴发铝合金门窗|装配式夹芯板房|艺术铁门|铝合金橱柜",
         bannerTieuDe: "西宁省专业铁门、兴发铝合金门窗与装配式夹芯板房",
-        bannerMoTa: "10余年经验，为您的工程提供最佳解决方案。",
+        bannerMoTa: "工匠团队10余年经验，为您的工程提供最佳解决方案。",
         nhanBaoGia: "获取报价",
         thietKeNha3D: "3D房屋设计",
         dichVuPhu: "业务领域",
@@ -332,9 +332,9 @@ window.lang_zh = {
         faqChinh: "常见问题",
         ctaChinh: "准备好开始您的工程了吗？",
         datLichKhaoSat: "预约免费上门勘察",
-        goiNgay: "致电 097-622-4875",
+        goiNgay: "致电 0976 224 875",
         dangTai: "加载中...",
-        vsKinhNghiemDesc: "10余年从事铁门、铝合金门窗及装配式夹芯板房加工",
+        vsKinhNghiemDesc: "工匠团队10余年从事铁门、铝合金门窗及装配式夹芯板房加工",
         vsChatLuongDesc: "正品材料、全流程自主生产，交付前严格检验",
         vsGiaCaDesc: "报价透明、有竞争力，施工过程中无隐性费用",
         vsBaoHanhDesc: "承诺产品保修，随时提供快速维修支持",
@@ -367,7 +367,7 @@ window.lang_zh = {
     gioiThieu: {
         veChungToiPhu: "关于我们",
         veChungToiChinh: "Tiếu Nghĩa 机械有限公司",
-        doan1: "Tiếu Nghĩa 在西宁省成立并经营，拥有10余年铁门、兴发铝合金门窗加工安装及装配式夹芯板房施工经验，是值得信赖的企业。",
+        doan1: "Tiếu Nghĩa 在西宁省成立并经营，工匠团队拥有10余年铁门、兴发铝合金门窗加工安装及装配式夹芯板房施工经验，是值得信赖的企业。",
         doan2: "我们始终把产品质量和客户满意放在首位。凭借熟练的工匠、全流程自主生产和现代化设备，Tiếu Nghĩa 致力于提供耐用、安全、最具性价比的产品。",
         giaTriPhu: "发展基石",
         giaTriChinh: "4大核心价值",
@@ -384,7 +384,7 @@ window.lang_zh = {
         chiDuong: "导航前往",
         lienHeChungToi: "直接联系我们",
         lhDiaChi: "12 Ấp An Thuận, xã An Ninh, tỉnh Tây Ninh（越南西宁省安宁乡安顺邑12号）",
-        lhDienThoai: "097-622-4875",
+        lhDienThoai: "0976 224 875",
         lhEmail: "nhomkinhtieunghia@gmail.com",
         lhGio: "8:00 - 17:00（周一至周日）"
     }

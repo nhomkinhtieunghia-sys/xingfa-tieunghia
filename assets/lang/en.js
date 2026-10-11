@@ -14,7 +14,7 @@ window.lang_en = {
         tieuDeDatLich: "Booking & Progress - Xingfa Tieu Nghia",
         gioLamViec: "8:00 - 17:00 (Mon - Sun)",
         khauHieu: "Mechanical – Aluminium – Panel",
-        nutGoi: "Call 097-622-4875"
+        nutGoi: "Call 0976 224 875"
     },
     baoGia: {
         tieuDe: "Quote Request Cart",
@@ -34,7 +34,7 @@ window.lang_en = {
         guiYeuCau: "Submit Quote Request",
         dangGui: "Submitting...",
         loiNhap: "Please enter your full name and a valid phone number (10 digits).",
-        camOnTen: "Thank you {ten}, Xingfa Tieu Nghia will contact you shortly! Support Hotline: 097-622-4875",
+        camOnTen: "Thank you {ten}, Xingfa Tieu Nghia will contact you shortly! Support Hotline: 0976 224 875",
         loiGui: "An error occurred while submitting. Please try again later.",
         xacNhanXoaMot: "Are you sure you want to remove this product from your quote cart?",
         xacNhanXoaHet: "Are you sure you want to clear ALL products from your quote cart?",
@@ -70,7 +70,7 @@ window.lang_en = {
         gioBaoGia: "Quote Cart"
     },
     footer: {
-        moTa: "Tieu Nghia Mechanical Co., Ltd - Over 10 years of experience in processing and installing iron doors, Xingfa aluminum doors and prefab panel houses.",
+        moTa: "Tieu Nghia Mechanical Co., Ltd – a craftsman team with over 10 years of experience in processing and installing iron doors, Xingfa aluminum doors and prefab panel houses.",
         lienKet: "Links",
         lienHe: "Contact",
         diaChi: "12 An Thuan Hamlet, An Ninh Commune, Tay Ninh Province",
@@ -143,7 +143,7 @@ window.lang_en = {
         khongDoiDuoc: "Cannot change: the survey has been done or the booking was cancelled.",
         loiNhap: "Please enter your name, a valid 10-digit phone number, address and date.",
         loiNgay: "The date cannot be in the past.",
-        loiMang: "Connection error, please try again or call 097-622-4875.",
+        loiMang: "Connection error, please try again or call 0976 224 875.",
         ngay: "Date",
         trangThai: "Status",
         hienTai: "Current"
@@ -192,7 +192,7 @@ window.lang_en = {
         cuaNhomXingfa: "Xingfa aluminium door",
         cuaPanel: "Panel door",
         dangTai3D: "Loading 3D model...",
-        goiYKeo: "Drag to rotate · scroll / pinch to zoom",
+        goiYKeo: "Drag to rotate · Ctrl + scroll or pinch to zoom",
         truoc: "Front",
         ben: "Side",
         tren: "Top",
@@ -286,7 +286,7 @@ window.lang_en = {
     trangChu: {
         goChu: "Xingfa aluminium doors|Prefab panel houses|Decorative iron gates|Aluminium kitchens",
         bannerTieuDe: "Steel Doors, Xingfa Aluminium Doors & Prefab Panel Houses in Tây Ninh",
-        bannerMoTa: "Over 10 years of experience delivering the best solutions for your project.",
+        bannerMoTa: "A craftsman team with over 10 years of experience delivering the best solutions for your project.",
         nhanBaoGia: "Get a quote",
         thietKeNha3D: "3D house design",
         dichVuPhu: "WHAT WE DO",
@@ -332,9 +332,9 @@ window.lang_en = {
         faqChinh: "Frequently Asked Questions",
         ctaChinh: "Ready for Your Project?",
         datLichKhaoSat: "Book a free site survey",
-        goiNgay: "Call 097-622-4875",
+        goiNgay: "Call 0976 224 875",
         dangTai: "Loading...",
-        vsKinhNghiemDesc: "Over 10 years in steel door, aluminium door and prefab panel house fabrication",
+        vsKinhNghiemDesc: "Craftsmen with over 10 years in steel door, aluminium door and prefab panel house fabrication",
         vsChatLuongDesc: "Genuine materials, an in-house production process and strict checks before handover",
         vsGiaCaDesc: "Transparent, competitive quotes with no hidden costs during construction",
         vsBaoHanhDesc: "We stand behind our products with warranty and quick repair support whenever you need it",
@@ -367,7 +367,7 @@ window.lang_en = {
     gioiThieu: {
         veChungToiPhu: "ABOUT US",
         veChungToiChinh: "Tiếu Nghĩa Mechanical Co., Ltd",
-        doan1: "Founded and operating in Tây Ninh, Tiếu Nghĩa is proud to be a trusted company with over 10 years of experience in fabricating and installing steel doors, Xingfa aluminium doors and prefab panel houses.",
+        doan1: "Founded and operating in Tây Ninh, Tiếu Nghĩa is proud of its craftsman team with over 10 years of experience in fabricating and installing steel doors, Xingfa aluminium doors and prefab panel houses.",
         doan2: "We always put product quality and customer satisfaction first. With skilled craftsmen, an in-house workflow and modern equipment, Tiếu Nghĩa is committed to durable, safe and cost-effective products.",
         giaTriPhu: "OUR FOUNDATION",
         giaTriChinh: "4 Core Values",
@@ -384,7 +384,7 @@ window.lang_en = {
         chiDuong: "Get directions",
         lienHeChungToi: "Contact Us Directly",
         lhDiaChi: "12 Ấp An Thuận, xã An Ninh, tỉnh Tây Ninh (12 An Thuan Hamlet, An Ninh Commune, Tay Ninh Province)",
-        lhDienThoai: "097-622-4875",
+        lhDienThoai: "0976 224 875",
         lhEmail: "nhomkinhtieunghia@gmail.com",
         lhGio: "8:00 - 17:00 (Mon - Sun)"
     }
