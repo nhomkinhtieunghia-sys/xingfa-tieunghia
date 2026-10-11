@@ -12,7 +12,7 @@
 
 /* Bố cục tab 3D */
 .tk-bo-cuc { display: grid; grid-template-columns: 340px 1fr; gap: 24px; align-items: start; }
-.tk-tuy-chon { background: #fff; border-radius: var(--bo-goc); box-shadow: var(--bong); padding: 8px 18px; max-height: calc(70vh + 120px); overflow-y: auto; position: sticky; top: 90px; }
+.tk-tuy-chon { background: #fff; border-radius: var(--bo-goc); box-shadow: var(--bong); padding: 8px 18px; max-height: calc(100vh - 110px); overflow-y: auto; position: sticky; top: 90px; padding-bottom: 76px; }
 .tk-tuy-chon details { border-bottom: 1px solid var(--mau-vien); padding: 12px 0; }
 .tk-tuy-chon details:last-child { border-bottom: none; }
 .tk-tuy-chon summary { font-family: 'Poppins', sans-serif; font-weight: 600; color: var(--mau-chinh); cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; }
@@ -47,7 +47,7 @@
 
 /* Khung 3D */
 .tk-cot-phai { min-width: 0; }
-.tk-khung-3d { position: relative; height: 70vh; min-height: 420px; border-radius: var(--bo-goc); overflow: hidden; background: linear-gradient(180deg, #CFE6FA 0%, #EAF4FD 55%, #FFFFFF 100%); box-shadow: var(--bong); touch-action: none; }
+.tk-khung-3d { position: relative; height: calc(100vh - 200px); min-height: 420px; max-height: 760px; border-radius: var(--bo-goc); overflow: hidden; background: linear-gradient(180deg, #CFE6FA 0%, #EAF4FD 55%, #FFFFFF 100%); box-shadow: var(--bong); touch-action: none; }
 .tk-khung-3d canvas { display: block; width: 100% !important; height: 100% !important; cursor: grab; }
 .tk-khung-3d canvas:active { cursor: grabbing; }
 .tk-dang-tai { position: absolute; inset: 0; display: flex; flex-direction: column; gap: 12px; align-items: center; justify-content: center; color: var(--mau-chinh); font-weight: 500; text-align: center; padding: 20px; }
@@ -128,3 +128,14 @@
 
 /* Phần tử bị ẩn bằng thuộc tính hidden luôn ẩn (kể cả khi có display: grid/flex) */
 .tk-section [hidden] { display: none !important; }
+
+/* Gợi ý nhấp nháy khi khách cuộn chuột trên khung 3D mà chưa bật zoom */
+.tk-goi-y-keo { transition: background .2s, color .2s; }
+.tk-goi-y-keo.nhay-goi-y { background: var(--mau-chinh); color: #fff; }
+
+/* Nút "Cần tư vấn?" thu gọn thành icon tròn trên trang này để không che bảng tùy chọn */
+@media (min-width: 641px) {
+  .tl-nut-mo .tl-nhan-mo { display: none; }
+  .tl-nut-mo { padding: 0 14px; }
+}
+.tg-tom-tat { padding-bottom: 80px; }
